@@ -1,0 +1,13 @@
+{
+  "name": "project_files",
+  "_release": "dd17028a77",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "dd17028a777474bfc9f788b18c4f84b34c27fc89"
+  },
+  "_source": "git@github-chase:OptimusRhyme/project_files.git",
+  "_target": "*",
+  "_originalSource": "git@github-chase:OptimusRhyme/project_files.git",
+  "_direct": true
+}
