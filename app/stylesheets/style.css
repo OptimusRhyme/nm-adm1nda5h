@@ -1,0 +1,133 @@
+/*===== FONTS =====*/
+@font-face {
+  font-family: 'Avenir';
+  src: url("../fonts/avenir_next_rg-webfont.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/avenir_next_rg-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/avenir_next_rg-webfont.woff") format("woff"), url("../fonts/avenir_next_rg-webfont.ttf") format("truetype"), url("../fonts/avenir_next_rg-webfont.svg#95d90f2cd2aa64bdfee0e9f34c516e71") format("svg");
+  /* Legacy iOS */
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'Brandon';
+  src: url("../fonts/brandon_bld-webfont.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/brandon_bld-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/brandon_bld-webfont.woff") format("woff"), url("../fonts/brandon_bld-webfont.ttf") format("truetype"), url("../fonts/brandon_bld-webfont.svg#e2b4a901dc21adc8c4deecbedb302532") format("svg");
+  /* Legacy iOS */
+  font-style: normal;
+  font-weight: 400;
+}
+/*===== SASS VARIABLES =====*/
+/*===== GENERAL STYLES =====*/
+html body {
+  background: #f7f7f7;
+  overflow-x: hidden;
+}
+
+/*===== HEADER =====*/
+header {
+  background: #fff;
+  border-bottom: 3px solid #e9e9e9;
+  height: 94px;
+  min-width: 100%;
+  position: fixed;
+  z-index: 1;
+}
+
+.header-brand {
+  background: #1a7fbb;
+  display: inline-block;
+  padding: 23px 0 0px 40px;
+  height: 92px;
+  width: 340px;
+}
+
+.brand-logo {
+  height: 47px;
+}
+
+.breadcrumbs {
+  display: inline-block;
+  font-size: 35px;
+  font-family: "Avenir", Helvetica, Arial, sans-serif;
+  letter-spacing: 1.8;
+  padding-left: 45px;
+  position: relative;
+  top: 9px;
+}
+
+/*===== SIDEBAR NAV  =====*/
+.nav-wrapper {
+  background: #2c2c2c;
+  height: 100%;
+  margin-top: 92px;
+  position: fixed;
+  width: 340px;
+  z-index: 2;
+}
+.nav-wrapper .sidebar {
+  height: 90%;
+  overflow: auto;
+  padding-top: 15px;
+}
+.nav-wrapper .sidebar ul {
+  padding: 0;
+}
+.nav-wrapper .sidebar a {
+  border-left: 8px solid transparent;
+  color: #d9d9d9;
+  display: inline-block;
+  padding: 13px 32px;
+  text-decoration: none;
+  width: 100%;
+}
+.nav-wrapper .sidebar a:hover, .nav-wrapper .sidebar a:hover > .fa {
+  background: #f7f7f7;
+  border-left-color: #1a7fbb;
+  color: #1a7fbb;
+}
+.nav-wrapper .sidebar span {
+  font-family: "Avenir", Helvetica, Arial, sans-serif;
+  font-size: 20px;
+  letter-spacing: 1.5;
+}
+.nav-wrapper .sidebar .sub-nav span {
+  padding-left: 43px;
+}
+
+/*===== SIDEBAR NAV ICONS =====*/
+.fa {
+  color: #d9d9d9;
+  display: inline-block;
+  font-size: 19px;
+  margin-right: 22px;
+}
+
+/*===== HELP BAR =====*/
+#help-bar {
+  background: #e9e9e9;
+  float: right;
+  height: 100%;
+  padding: 0 5px;
+  position: fixed;
+  right: -270;
+  width: 300px;
+  z-index: 0;
+}
+
+.help-bar-content {
+  padding: 100px 20px;
+}
+
+.fa-long-arrow-left, .fa-long-arrow-right {
+  bottom: 10px;
+  color: #000;
+  position: absolute;
+}
+
+/*===== MAIN CONTENT =====*/
+main {
+  margin: 150px 0 25px 400px;
+  position: absolute;
+  width: 66%;
+}
