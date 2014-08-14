@@ -132,8 +132,37 @@ main {
 	}
 }
 
+.sub-header-nav {
+	border-bottom: solid #eeeeee 2px;
+	padding: 0;
+	margin: 0 0 20px;
+	width: 100%;
+
+	ul {
+		list-style-type: none;
+		padding: 0;
+		margin-bottom: 5px;
+	}
+
+	li {
+		margin-right: 20px;
+		display: inline-block;
+	}
+
+	a {
+		color: #7B7B7B;
+		padding-bottom: 7px;
+	}
+
+	a:hover, a.active {
+		color: $color-brand;
+		text-decoration: none;
+		border-bottom: solid $color-brand 2px;
+	}
+}
+
 /*===== FORMS =====*/
-fieldset {
+#main-container fieldset {
 	border-bottom: solid #eeeeee 5px;
 	border-right: solid #eeeeee 2px;
 
@@ -156,28 +185,31 @@ fieldset {
 }
 
 /*===== FORM FIELDS =====*/
-.input-group .form-control {
-	border: none;
-	box-shadow: none;
-	padding-left: 0;
-	z-index: 0;
-}
+.input-group {
 
-.form-control:focus {
-	box-shadow: none;
-}
+	.form-control {
+		border: none;
+		box-shadow: none;
+		padding-left: 0;
+		z-index: 0;
+	}
 
-.form-control::-moz-placeholder {
-  color: #CACACA;
-  font-style: italic;
-}
+	.form-control:focus {
+		box-shadow: none;
+	}
 
-.form-control:-ms-input-placeholder {
-  color: #CACACA;
-  font-style: italic;
-}
+	.form-control::-moz-placeholder {
+	  color: #CACACA;
+	  font-style: italic;
+	}
 
-.form-control::-webkit-input-placeholder {
-  color: #CACACA;
-  font-style: italic;
+	.form-control:-ms-input-placeholder {
+	  color: #CACACA;
+	  font-style: italic;
+	}
+
+	.form-control::-webkit-input-placeholder {
+	  color: #CACACA;
+	  font-style: italic;
+	}
 }
