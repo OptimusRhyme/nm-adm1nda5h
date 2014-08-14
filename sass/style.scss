@@ -121,7 +121,62 @@ header {
 
 /*===== MAIN CONTENT =====*/
 main {
-	margin: 150px 0 25px 400px;
+	margin: 115px 0 25px 280px;
 	position: absolute;
 	width: 66%;
+
+	.container-fluid {
+		width: 800px;
+		margin: 0;
+	}
+}
+
+/*===== FORMS =====*/
+fieldset {
+	border-bottom: solid #eeeeee 5px;
+	border-right: solid #eeeeee 2px;
+
+	.row {
+		margin: 0;
+	}
+}
+
+#main-container .input-group {
+	background: #fff;
+	border-top: solid #eeeeee 2px;
+	border-left: solid #eeeeee 2px;
+	padding: 15px 25px;
+	font-family: $font-body;
+	float: left;
+}
+
+.field-label {
+	font-weight: 500;
+}
+
+/*===== FORM FIELDS =====*/
+.input-group .form-control {
+	border: none;
+	box-shadow: none;
+	padding-left: 0;
+	z-index: 0;
+}
+
+.form-control:focus {
+	box-shadow: none;
+}
+
+.form-control::-moz-placeholder {
+  color: #CACACA;
+  font-style: italic;
+}
+
+.form-control:-ms-input-placeholder {
+  color: #CACACA;
+  font-style: italic;
+}
+
+.form-control::-webkit-input-placeholder {
+  color: #CACACA;
+  font-style: italic;
 }
