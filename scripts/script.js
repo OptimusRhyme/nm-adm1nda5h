@@ -1,4 +1,3 @@
-
 //Help Bar
 $(".help-bar-content").hide();
 
@@ -18,7 +17,7 @@ $("#toggle-help").click(function() {
 
 	else {
 		helpBar.animate( {
-			right: "-270px"
+			right: "-316px"
 		}, 400, function() {
 			$(".help-bar-content").hide();
 		})

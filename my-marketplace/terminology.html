@@ -4,14 +4,14 @@
     <title>Dashboard</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
-    <link rel="stylesheet" type="text/css" href="stylesheets/style.css">
-    <link rel="stylesheet" type="text/css" href="stylesheets/bootstrap.css">
-    <link rel="stylesheet" type="text/css" href="stylesheets/bootstrap-theme.css">
+    <link rel="stylesheet" type="text/css" href="/stylesheets/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="/stylesheets/bootstrap-theme.css">
+    <link rel="stylesheet" type="text/css" href="/stylesheets/style.css">
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 </head>
 <body>
     <header>
-        <div class="breadcrumbs">Dashboard</div>
+        <div class="breadcrumbs">Terminology</div>
     </header><!-- Brand and Breadcrumbs-->
     <nav>
         <div class="nav-wrapper"  role="navigation">
@@ -152,27 +152,39 @@
             </ul> <!-- Sidebar List -->
         </div><!-- Nav Wrapper -->
     </nav><!-- Sidebar Navigation-->
-    <main></main><!-- Main Content -->
+    <main>
+        <div class="container-fluid" id="main-container">
+            <fieldset>
+                <div class="row">
+                    <div class="input-group col-xs-12">
+                        <label class="field-label" for="transactable-noun">BOOKABLE NOUN</label>
+                        <input type="text" id="transactable-noun" class="form-control field-input" placeholder="What will be transacted">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-group col-xs-6">
+                        <label class="field-label" for="transactable-noun">LESSOR</label>
+                        <input type="text" id="lessor" class="form-control field-input" placeholder="What will be lessor">
+                    </div>
+                    <div class="input-group col-xs-6">
+                        <label class="field-label" for="transactable-noun">LESSEE</label>
+                        <input type="text" id="lessee" class="form-control field-input" placeholder="Please input a lessee">
+                    </div>
+                </div>
+            </fieldset>
+        </div>
+    </main><!-- Main Content -->
     <aside>
         <div id="help-bar" class="closed">
             <i id="toggle-help" class="fa fa-long-arrow-left"></i>
-            <div class="help-bar-content">
-                <h1>Help Bar</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-                <ul>
-                    <li>Lorem ipsum</li>
-                    <li>dolor sit amet</li>
-                    <li>Lorem ipsum</li>
-                    <li>dolor sit amet</li>
-                </ul>
-            </div><!-- Help Bar Content -->
+            <div class="help-bar-content"></div><!-- Help Bar Content -->
         </div>
     </aside><!-- Help Bar -->
 
-    <script src="scripts/jquery/dist/jquery.js"></script>
-    <script src="scripts/script.js"></script>
-    <script src="scripts/modernizr/modernizr.js"></script>
-    <script src="scripts/bootstrap.js"></script>
+    <script src="/scripts/jquery/dist/jquery.js"></script>
+    <script src="/scripts/script.js"></script>
+    <script src="/scripts/modernizr/modernizr.js"></script>
+    <script src="/scripts/bootstrap.js"></script>
 
 </body>
 </html>
