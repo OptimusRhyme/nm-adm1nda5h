@@ -200,3 +200,46 @@ main .container-fluid {
   color: #CACACA;
   font-style: italic;
 }
+
+.field-upload {
+  border: dashed #eeeeee 2px;
+  padding: 50px 5px;
+  width: 125px;
+}
+.field-upload p {
+  color: #cacaca;
+  text-align: center;
+  font-style: italic;
+  margin: 0;
+}
+
+.field-upload:hover {
+  cursor: pointer;
+}
+
+/*===== TABLES =====*/
+.table {
+  font-size: 14px;
+}
+.table th, .table td {
+  font-weight: 100;
+  border: none !important;
+}
+.table a {
+  text-decoration: none;
+}
+.table td:nth-child(3), .table th:nth-child(3) {
+  text-align: right;
+}
+.table td:nth-child(3) > a {
+  visibility: hidden;
+  margin-left: 15px;
+}
+
+.table-hover tbody tr:hover td {
+  background: #ebf6fc;
+}
+
+.table-hover tbody tr:hover td a {
+  visibility: visible;
+}
