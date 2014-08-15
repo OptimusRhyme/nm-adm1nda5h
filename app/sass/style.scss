@@ -213,3 +213,51 @@ main {
 	  font-style: italic;
 	}
 }
+
+.field-upload {
+	border: dashed #eeeeee 2px;
+	padding: 50px 5px;
+	width: 125px;
+
+	p {
+		color: #cacaca;
+		text-align: center;
+		font-style: italic;
+		margin: 0;
+	}
+}
+
+.field-upload:hover {
+	cursor: pointer;
+}
+
+/*===== TABLES =====*/
+.table {
+	font-size: 14px;
+
+	th, td {
+		font-weight: 100;
+		border: none !important;
+	}
+
+	a {
+		text-decoration: none;
+	}
+
+	td:nth-child(3), th:nth-child(3) {
+		text-align: right;
+	}
+
+	td:nth-child(3) > a {
+		visibility: hidden;
+		margin-left: 15px;
+	}
+}
+
+.table-hover tbody tr:hover td {
+    background: #ebf6fc;
+}
+
+.table-hover tbody tr:hover td a {
+    visibility: visible;
+}
