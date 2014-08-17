@@ -14,6 +14,10 @@ html body {
 	overflow-x: hidden;
 }
 
+.dropshadow {
+	border-bottom: solid #eeeeee 5px;
+}
+
 /*===== HEADER =====*/
 
 header {
@@ -27,6 +31,7 @@ header {
 }
 
 .breadcrumbs {
+	display: inline-block;
 	font-size: 22px;
 	font-family: $font-body;
 	letter-spacing: 1.8;
@@ -34,15 +39,16 @@ header {
 
 .header-nav-wrapper {
 	float: right;
+	display: inline-block;
 }
 
 .header-btn {
+	color: #fff;
+	font-family: $font-heading;
+	font-size: 13px;
+	font-weight: 100;
 	margin-left: 15px;
 	padding: 7px 25px;
-	color: #fff;
-	font-size: 13px;
-	font-family: $font-heading;
-	font-weight: 100;
 }
 
 .header-btn:hover {
@@ -50,8 +56,8 @@ header {
 }
 
 .header-btn:focus {
-	outline: none;
 	color: #fff;
+	outline: none;
 }
 
 .btn-green {
@@ -235,10 +241,6 @@ main {
 	font-weight: 500;
 }
 
-.dropshadow {
-	border-bottom: solid #eeeeee 5px;
-}
-
 /*===== FORM FIELDS =====*/
 .input-group {
 
@@ -286,9 +288,14 @@ main {
 	cursor: pointer;
 }
 
+.field-textarea {
+	resize: none;
+}
+
 /*===== TABLES =====*/
 .table {
 	font-size: 14px;
+	margin-bottom: 0 !important;
 
 	th, td {
 		font-weight: 100;
@@ -323,4 +330,41 @@ main {
 
 .amount-due {
 	font-size: 20px;
+}
+
+/*===== PANELS =====*/
+.panel {
+	border-color: #ebebeb;
+	border-bottom: 0;
+	border-radius: 2px;
+}
+
+.panel-heading {
+	background: #ebebeb;
+	font-weight: 300;
+
+	p {
+		display: inline;
+	}
+
+	.fa {
+		color: #444444;
+		float: right;
+		font-size: 30px;
+	}
+}
+
+.panel-heading:hover {
+	cursor: pointer;
+}
+
+.panel-body {
+	border-top: 0 !important;
+	padding: 5px 15px;
+
+	table tbody td {
+		font-weight: 300;
+		font-family: 'Avenir';
+		padding-left: 30px;
+	}
 }
