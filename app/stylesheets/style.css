@@ -158,7 +158,6 @@ main .container-fluid {
 
 /*===== FORMS =====*/
 #main-container fieldset {
-  border-bottom: solid #eeeeee 5px;
   border-right: solid #eeeeee 2px;
 }
 #main-container fieldset .row {
@@ -176,6 +175,10 @@ main .container-fluid {
 
 .field-label {
   font-weight: 500;
+}
+
+.dropshadow {
+  border-bottom: solid #eeeeee 5px;
 }
 
 /*===== FORM FIELDS =====*/
