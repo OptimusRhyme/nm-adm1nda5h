@@ -24,6 +24,10 @@ html body {
   overflow-x: hidden;
 }
 
+.dropshadow {
+  border-bottom: solid #eeeeee 5px;
+}
+
 /*===== HEADER =====*/
 header {
   background: #fff;
@@ -36,6 +40,7 @@ header {
 }
 
 .breadcrumbs {
+  display: inline-block;
   font-size: 22px;
   font-family: "Avenir", Helvetica, Arial, sans-serif;
   letter-spacing: 1.8;
@@ -43,15 +48,16 @@ header {
 
 .header-nav-wrapper {
   float: right;
+  display: inline-block;
 }
 
 .header-btn {
+  color: #fff;
+  font-family: "Brandon", Helvetica, Arial, sans-serif;
+  font-size: 13px;
+  font-weight: 100;
   margin-left: 15px;
   padding: 7px 25px;
-  color: #fff;
-  font-size: 13px;
-  font-family: "Brandon", Helvetica, Arial, sans-serif;
-  font-weight: 100;
 }
 
 .header-btn:hover {
@@ -59,8 +65,8 @@ header {
 }
 
 .header-btn:focus {
-  outline: none;
   color: #fff;
+  outline: none;
 }
 
 .btn-green {
@@ -229,10 +235,6 @@ main .container-fluid {
   font-weight: 500;
 }
 
-.dropshadow {
-  border-bottom: solid #eeeeee 5px;
-}
-
 /*===== FORM FIELDS =====*/
 .input-group .form-control {
   border: none;
@@ -272,9 +274,14 @@ main .container-fluid {
   cursor: pointer;
 }
 
+.field-textarea {
+  resize: none;
+}
+
 /*===== TABLES =====*/
 .table {
   font-size: 14px;
+  margin-bottom: 0 !important;
 }
 .table th, .table td {
   font-weight: 100;
@@ -304,4 +311,38 @@ main .container-fluid {
 
 .amount-due {
   font-size: 20px;
+}
+
+/*===== PANELS =====*/
+.panel {
+  border-color: #ebebeb;
+  border-bottom: 0;
+  border-radius: 2px;
+}
+
+.panel-heading {
+  background: #ebebeb;
+  font-weight: 300;
+}
+.panel-heading p {
+  display: inline;
+}
+.panel-heading .fa {
+  color: #444444;
+  float: right;
+  font-size: 30px;
+}
+
+.panel-heading:hover {
+  cursor: pointer;
+}
+
+.panel-body {
+  border-top: 0 !important;
+  padding: 5px 15px;
+}
+.panel-body table tbody td {
+  font-weight: 300;
+  font-family: 'Avenir';
+  padding-left: 30px;
 }
