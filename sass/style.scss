@@ -163,7 +163,6 @@ main {
 
 /*===== FORMS =====*/
 #main-container fieldset {
-	border-bottom: solid #eeeeee 5px;
 	border-right: solid #eeeeee 2px;
 
 	.row {
@@ -182,6 +181,10 @@ main {
 
 .field-label {
 	font-weight: 500;
+}
+
+.dropshadow {
+	border-bottom: solid #eeeeee 5px;
 }
 
 /*===== FORM FIELDS =====*/
