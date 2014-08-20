@@ -49,6 +49,7 @@ header {
 .header-nav-wrapper {
   float: right;
   display: inline-block;
+  margin-bottom: 20px;
 }
 
 .header-btn {
@@ -217,6 +218,8 @@ main .container-fluid {
 /*===== FORMS =====*/
 #main-container fieldset {
   border-right: solid #eeeeee 2px;
+  margin-bottom: 20px;
+  width: 100%;
 }
 #main-container fieldset .row {
   margin: 0;

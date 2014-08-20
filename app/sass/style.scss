@@ -40,6 +40,7 @@ header {
 .header-nav-wrapper {
 	float: right;
 	display: inline-block;
+	margin-bottom: 20px;
 }
 
 .header-btn {
@@ -222,6 +223,8 @@ main {
 /*===== FORMS =====*/
 #main-container fieldset {
 	border-right: solid #eeeeee 2px;
+	margin-bottom: 20px;
+	width: 100%;
 
 	.row {
 		margin: 0;
