@@ -236,6 +236,7 @@ main .container-fluid {
 
 .field-label {
   font-weight: 500;
+  display: block;
 }
 
 /*===== FORM FIELDS =====*/
@@ -261,19 +262,18 @@ main .container-fluid {
   font-style: italic;
 }
 
-.upload-file {
-  display: none !important;
-}
-
 .field-upload {
-  color: #cacaca;
   border: dashed #eeeeee 2px;
-  font-style: italic;
   padding: 50px 5px;
   width: 125px;
-  text-align: center;
+  font-style: italic;
+  color: #CACACA;
   font-weight: 100;
+  text-align: center;
+}
 
+.field-upload .upload-file {
+  display: none;
 }
 
 .field-upload:hover {
@@ -292,8 +292,7 @@ select {
   background: #fff;
   border: none;
   outline: none;
-  margin: 0 0 12px -7px;
-
+  margin-left: -7px;
 }
 
 select option:disabled {
@@ -310,6 +309,36 @@ select option:disabled {
 
 #main-container .new-ticket-wrapper.dropshadow {
   border-bottom: solid #d5d5d5 5px;
+}
+
+.color-thumbnail {
+  height: 50px;
+  width: 50px;
+  display: inline-block;
+}
+
+.color-select {
+  display: inline-block;
+  width: 80%;
+  position: relative;
+  bottom: 20px;
+  margin: 0 0 0 10px;
+}
+
+.color-thumbnail.header {
+  background: #7f7d7f;
+}
+
+.color-thumbnail.footer {
+  background: #000;
+}
+
+.color-thumbnail.search {
+  background: #1a7fbb;
+}
+
+.color-thumbnail.list {
+  background: #65df7d;
 }
 
 /*===== TABLES =====*/
