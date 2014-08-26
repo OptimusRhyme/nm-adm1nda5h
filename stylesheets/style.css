@@ -1,14 +1,5 @@
 /*===== FONTS =====*/
 @font-face {
-  font-family: 'Avenir';
-  src: url("../fonts/avenir_next_rg-webfont.eot");
-  /* IE9 Compat Modes */
-  src: url("../fonts/avenir_next_rg-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/avenir_next_rg-webfont.woff") format("woff"), url("../fonts/avenir_next_rg-webfont.ttf") format("truetype"), url("../fonts/avenir_next_rg-webfont.svg#95d90f2cd2aa64bdfee0e9f34c516e71") format("svg");
-  /* Legacy iOS */
-  font-style: normal;
-  font-weight: 400;
-}
-@font-face {
   font-family: 'Brandon';
   src: url("../fonts/brandon_bld-webfont.eot");
   /* IE9 Compat Modes */
@@ -17,11 +8,42 @@
   font-style: normal;
   font-weight: 400;
 }
+@font-face {
+  font-family: 'Avenir Regular';
+  src: url("../fonts/AvenirNext-Regular.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/AvenirNext-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/AvenirNext-Regular.woff") format("woff"), url("../fonts/AvenirNext-Regular.ttf") format("truetype"), url("../fonts/AvenirNext-Regular.svg#fe299bf9c71888f1da7b2c2d74973b56") format("svg");
+  /* Legacy iOS */
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'Avenir Light';
+  src: url("../fonts/AvenirNext-light.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/AvenirNext-light.eot?#iefix") format("embedded-opentype"), url("../fonts/AvenirNext-light.woff") format("woff"), url("../fonts/AvenirNext-light.ttf") format("truetype"), url("../fonts/AvenirNext-light.svg#bdda6bf0cbb2275362361ca24e93166f") format("svg");
+  /* Legacy iOS */
+  font-style: normal;
+  font-weight: 200;
+}
+@font-face {
+  font-family: 'Avenir Bold';
+  src: url("../fonts/AvenirNext-Bold.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/AvenirNext-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/AvenirNext-Bold.woff") format("woff"), url("../fonts/AvenirNext-Bold.ttf") format("truetype"), url("../fonts/AvenirNext-Bold.svg#92550229aad14ffa2dc273e49410d17e") format("svg");
+  /* Legacy iOS */
+  font-style: normal;
+  font-weight: 700;
+}
 /*===== SASS VARIABLES =====*/
 /*===== GENERAL STYLES =====*/
 html body {
   background: #f7f7f7;
   overflow-x: hidden;
+}
+
+.dropshadow {
+  border-bottom: solid #eeeeee 5px;
 }
 
 /*===== HEADER =====*/
@@ -30,15 +52,70 @@ header {
   border-bottom: 2px solid #e9e9e9;
   height: 61px;
   min-width: 100%;
-  padding: 15px 250px;
+  padding: 11px 15px 0 250px;
   position: fixed;
   z-index: 1;
 }
 
 .breadcrumbs {
+  display: inline-block;
   font-size: 22px;
-  font-family: "Avenir", Helvetica, Arial, sans-serif;
+  font-family: "Avenir Light", Helvetica, Arial, sans-serif;
   letter-spacing: 1.8;
+}
+
+.header-nav-wrapper {
+  float: right;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.header-btn {
+  color: #fff;
+  font-family: "Brandon", Helvetica, Arial, sans-serif;
+  font-size: 13px;
+  font-weight: 100;
+  margin-left: 15px;
+  padding: 7px 25px;
+}
+
+.header-btn:hover {
+  color: #fff;
+}
+
+.header-btn:focus {
+  color: #fff;
+  outline: none;
+}
+
+.btn-green {
+  background-color: #53bc86;
+  border-bottom: solid #4aa571 3px;
+}
+
+.btn-green:hover {
+  background-color: #72cc9b;
+  border-bottom-color: #60b281;
+}
+
+.btn-green:focus {
+  background-color: #46a36c;
+  border-bottom-color: #3f9160;
+}
+
+.btn-grey {
+  background-color: #d1d1d1;
+  border-bottom: solid #bcbcbc 3px;
+}
+
+.btn-grey:hover {
+  background-color: #e2e2e2;
+  border-bottom-color: #cccccc;
+}
+
+.btn-grey:focus {
+  background-color: #afafaf;
+  border-bottom-color: #939393;
 }
 
 /*===== SIDEBAR NAV  =====*/
@@ -81,13 +158,14 @@ header {
   color: #1a7fbb;
 }
 .nav-wrapper .sidebar span {
-  font-family: "Avenir", Helvetica, Arial, sans-serif;
+  font-family: "Avenir Light", Helvetica, Arial, sans-serif;
   font-size: 14px;
   letter-spacing: 1.5;
   font-weight: 100;
 }
 .nav-wrapper .sidebar .sub-nav span {
   padding-left: 43px;
+  font-family: "Avenir Light", Helvetica, Arial, sans-serif;
 }
 
 /*===== SIDEBAR NAV ICONS =====*/
@@ -131,12 +209,39 @@ main .container-fluid {
   margin: 0;
 }
 
-/*===== FORMS =====*/
-fieldset {
-  border-bottom: solid #eeeeee 5px;
-  border-right: solid #eeeeee 2px;
+.sub-header-nav {
+  border-bottom: solid #eeeeee 2px;
+  padding: 0;
+  margin: 0 0 20px;
+  width: 100%;
 }
-fieldset .row {
+.sub-header-nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 5px;
+}
+.sub-header-nav li {
+  margin-right: 20px;
+  display: inline-block;
+}
+.sub-header-nav a {
+  color: #7B7B7B;
+  padding-bottom: 7px;
+  font-weight: 300;
+}
+.sub-header-nav a:hover, .sub-header-nav a.active {
+  color: #1a7fbb;
+  text-decoration: none;
+  border-bottom: solid #1a7fbb 2px;
+}
+
+/*===== FORMS =====*/
+#main-container fieldset {
+  border-right: solid #eeeeee 2px;
+  margin-bottom: 20px;
+  width: 100%;
+}
+#main-container fieldset .row {
   margin: 0;
 }
 
@@ -145,12 +250,13 @@ fieldset .row {
   border-top: solid #eeeeee 2px;
   border-left: solid #eeeeee 2px;
   padding: 15px 25px;
-  font-family: "Avenir", Helvetica, Arial, sans-serif;
+  font-family: "Avenir Regular", Helvetica, Arial, sans-serif;
   float: left;
 }
 
 .field-label {
   font-weight: 500;
+  display: block;
 }
 
 /*===== FORM FIELDS =====*/
@@ -160,22 +266,176 @@ fieldset .row {
   padding-left: 0;
   z-index: 0;
 }
-
-.form-control:focus {
+.input-group .form-control:focus {
   box-shadow: none;
 }
-
-.form-control::-moz-placeholder {
+.input-group .form-control::-moz-placeholder {
+  color: #CACACA;
+  font-style: italic;
+}
+.input-group .form-control:-ms-input-placeholder {
+  color: #CACACA;
+  font-style: italic;
+}
+.input-group .form-control::-webkit-input-placeholder {
   color: #CACACA;
   font-style: italic;
 }
 
-.form-control:-ms-input-placeholder {
-  color: #CACACA;
+.field-upload {
+  border: dashed #eeeeee 2px;
+  padding: 50px 5px;
+  width: 125px;
   font-style: italic;
+  color: #CACACA;
+  font-weight: 100;
+  text-align: center;
 }
 
-.form-control::-webkit-input-placeholder {
-  color: #CACACA;
-  font-style: italic;
+.field-upload .upload-file {
+  display: none;
+}
+
+.field-upload:hover {
+  cursor: pointer;
+}
+
+.input-group .field-textarea {
+  resize: none;
+  margin-bottom: 20px;
+  border-radius: 2px;
+}
+
+select {
+  display: block;
+  width: 100%;
+  background: #fff;
+  border: none;
+  outline: none;
+  margin-left: -7px;
+}
+
+select option:disabled {
+  color: #eeeeee;
+}
+
+#main-container .new-ticket-wrapper {
+  background: #e9e9e9;
+}
+
+#main-container .new-ticket-wrapper textarea {
+  padding: 20px 20px;
+}
+
+#main-container .new-ticket-wrapper.dropshadow {
+  border-bottom: solid #d5d5d5 5px;
+}
+
+.color-thumbnail {
+  height: 50px;
+  width: 50px;
+  display: inline-block;
+}
+
+.color-select {
+  display: inline-block;
+  width: 80%;
+  position: relative;
+  bottom: 20px;
+  margin: 0 0 0 10px;
+}
+
+.color-thumbnail.header {
+  background: #7f7d7f;
+}
+
+.color-thumbnail.footer {
+  background: #000;
+}
+
+.color-thumbnail.search {
+  background: #1a7fbb;
+}
+
+.color-thumbnail.list {
+  background: #65df7d;
+}
+
+/*===== TABLES =====*/
+.table {
+  font-size: 14px;
+  margin-bottom: 0 !important;
+}
+.table th, .table td {
+  font-weight: 100;
+  border: none !important;
+}
+.table th {
+  font-weight: 500;
+}
+.table a {
+  text-decoration: none;
+}
+.table .table-head-link, .table .table-body-link {
+  text-align: right;
+}
+.table .table-body-link > a {
+  visibility: hidden;
+  margin-left: 15px;
+}
+
+.table-hover tbody tr:hover td {
+  background: #ebf6fc;
+}
+
+.table-hover tbody tr:hover td a {
+  visibility: visible;
+}
+
+.amount-due {
+  font-size: 20px;
+}
+
+.ticket-number {
+  color: #1a7fbb;
+}
+
+/*===== PANELS =====*/
+.panel {
+  border-color: #ebebeb;
+  border-bottom: 0;
+  border-radius: 2px;
+}
+
+.panel-heading {
+  background: #ebebeb;
+  font-weight: 300;
+}
+.panel-heading p {
+  display: inline;
+}
+.panel-heading .fa {
+  color: #444444;
+  float: right;
+  font-size: 30px;
+}
+
+.panel-heading:hover {
+  cursor: pointer;
+}
+
+.panel-body {
+  border-top: 0 !important;
+  padding: 5px 15px;
+}
+.panel-body table tbody td {
+  font-weight: 300;
+  font-family: "Avenir Regular", Helvetica, Arial, sans-serif;
+  padding-left: 30px;
+}
+
+/*===== AVATARS =====*/
+.admin-avatar {
+  height: 50px;
+  float: right;
 }

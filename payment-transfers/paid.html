@@ -1,0 +1,221 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Near Me Dashboard</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" type="text/css" href="/stylesheets/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="/stylesheets/bootstrap-theme.css">
+    <link rel="stylesheet" type="text/css" href="/stylesheets/style.css">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="breadcrumbs">Manage Payments</div>
+    </header><!-- Brand and Breadcrumbs-->
+    <nav>
+        <div class="nav-wrapper"  role="navigation">
+            <div class="brand">
+                <img src="/images/brand-logo.png" alt="" class="brand-logo">
+            </div>
+            <ul class="sidebar nav nav-stacked">
+                <li class="active" id="recent-items">
+                    <a href="/recent-items">
+                        <i class='fa fa-history'></i>
+                        <span>Recent Items</span>
+                    </a>
+                </li><!-- Recent Items -->
+                <li id="dashboard">
+                    <a href="/dashboard">
+                        <i class='fa fa-tachometer'></i>
+                        <span>Dashboard</span>
+                    </a>
+                </li><!-- Dashboard -->
+                <li id="pages">
+                    <a href="#pages-sub" data-toggle="collapse" data-parent="#pages">
+                        <i class='fa fa-files-o'></i>
+                        <span>Pages</span>
+                    </a>
+                    <ul id="pages-sub" class="sub-nav collapse">
+                        <li>
+                            <a href="/pages/homepage">
+                                <span>Homepage</span>
+                            </a>
+                        </li><!-- Homepage -->
+                        <li>
+                            <a href="/pages/all">
+                                <span>All Pages</span>
+                            </a><!-- All Pages -->
+                        </li>
+                    </ul><!-- Pages Sub Nav -->
+                </li><!-- Pages -->
+                <li id="theme">
+                    <a href="/theme">
+                        <i class='fa fa-picture-o'></i>
+                        <span>Theme</span>
+                    </a>
+                </li><!-- Theme -->
+                <li id="services">
+                    <a href="/services">
+                        <i class='fa fa-cubes'></i>
+                        <span>Services</span>
+                    </a>
+                </li><!-- Services -->
+                <li id="my-marketplace">
+                    <a href="#my-marketplace-sub" data-toggle="collapse" data-parent="#my-marketplace">
+                        <i class='fa fa-bank'></i>
+                        <span>My Marketplace</span>
+                    </a>
+                    <ul id="my-marketplace-sub" class="sub-nav collapse">
+                        <li>
+                            <a href="/my-marketplace/permissions">
+                                <span>Permissions</span>
+                            </a>
+                        </li><!-- Permissions -->
+                        <li>
+                            <a href="/my-marketplace/integrations">
+                                <span>Integrations</span>
+                            </a>
+                        </li><!-- Integrations -->
+                        <li>
+                            <a href="/my-marketplace/pricing">
+                                <span>Pricing</span>
+                            </a>
+                        </li><!-- Pricing -->
+                        <li>
+                            <a href="/my-marketplace/terminology">
+                                <span>Terminology</span>
+                            </a>
+                        </li>
+                    </ul><!-- My Marketplace Sub Nav -->
+                </li><!-- My Marketplace -->
+                <li id="mailers">
+                    <a href="/mailers">
+                        <i class='fa fa-envelope'></i>
+                        <span>Mailers</span>
+                    </a>
+                </li><!-- Mailers -->
+                <li id="manage-partners">
+                    <a href="/manage-partners">
+                        <i class='fa fa-briefcase'></i>
+                        <span>Manage Partners</span>
+                    </a>
+                </li><!-- Manage Partners -->
+                <li id="payment-transfers">
+                    <a href="/payment-transfers">
+                        <i class='fa fa-credit-card'></i>
+                        <span>Payment Transfers</span>
+                    </a>
+                </li><!-- Payment Transfers -->
+                <li id="analytics">
+                    <a href="/analytics">
+                        <i class='fa fa-bar-chart-o'></i>
+                        <span>Analytics</span>
+                    </a>
+                </li><!-- Analytics -->
+                <li id="blog">
+                    <a href="/blog">
+                        <i class='fa fa-pencil'></i>
+                        <span>Blog</span>
+                    </a>
+                </li><!-- Blog -->
+                <li id="support-center">
+                    <a href="#support-center-sub" data-toggle="collapse" data-parent="#support-center">
+                        <i class='fa fa-life-ring'></i>
+                        <span>Support Center</span>
+                    </a>
+                    <ul id="support-center-sub" class="sub-nav collapse">
+                        <li>
+                            <a href="/support/ticketing">
+                                <span>Customer ticketing</span>
+                            </a>
+                        </li><!-- Customer Ticketing -->
+                        <li>
+                            <a href="/support/faq">
+                                <span>Manage FAQ</span>
+                            </a>
+                        </li><!-- Manage FAQ -->
+                    </ul><!-- Support Center Sub Nav -->
+                </li><!-- Support Center -->
+                <li id="crm">
+                    <a href="/crm">
+                        <i class='fa fa-users'></i>
+                        <span>CRM</span>
+                    </a>
+                </li><!-- CRM -->
+                <li id="settings">
+                    <a href="/settings">
+                        <i class='fa fa-gears'></i>
+                        <span>Settings</span>
+                    </a>
+                </li><!-- Settings -->
+            </ul> <!-- Sidebar List -->
+        </div><!-- Nav Wrapper -->
+    </nav><!-- Sidebar Navigation-->
+    <main>
+        <div class="container-fluid" id="main-container">
+             <div class="sub-header-nav">
+                <ul>
+                    <li>
+                        <a href="#">
+                            Pending
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="active">
+                            Paid
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            All
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <fieldset>
+                <div class="row">
+                    <div class="input-group col-xs-12 dropshadow">
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>STATE</th>
+                                    <th>COMPANY</th>
+                                    <th>AMOUNT</th>
+                                    <th>CREATED</th>
+                                    <td class="table-head-link">
+                                        <a href="new">Download Report</a>
+                                    </td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Pending</td>
+                                    <td>Huddle Campus</td>
+                                    <td>$100.00 USD</td>
+                                    <td>2014-06-01 00:02:58 UTC</td>
+                                    <td class="table-body-link">
+                                        <a href="#">Details</a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </fieldset>
+        </div>
+    </main><!-- Main Content -->
+    <aside>
+        <div id="help-bar" class="closed">
+            <i id="toggle-help" class="fa fa-long-arrow-left"></i>
+            <div class="help-bar-content"></div><!-- Help Bar Content -->
+        </div>
+    </aside><!-- Help Bar -->
+
+    <script src="/scripts/jquery/dist/jquery.js"></script>
+    <script src="/scripts/script.js"></script>
+    <script src="/scripts/modernizr/modernizr.js"></script>
+    <script src="/scripts/bootstrap.js"></script>
+
+</body>
+</html>
