@@ -6,7 +6,9 @@ $color-brand: #1a7fbb;
 
 $font-heading: 'Brandon', Helvetica, Arial, sans-serif;
 
-$font-body: 'Avenir', Helvetica, Arial, sans-serif;
+$font-body-light: 'Avenir Light', Helvetica, Arial, sans-serif;
+
+$font-body-regular: 'Avenir Regular', Helvetica, Arial, sans-serif;
 
 /*===== GENERAL STYLES =====*/
 html body {
@@ -33,7 +35,7 @@ header {
 .breadcrumbs {
 	display: inline-block;
 	font-size: 22px;
-	font-family: $font-body;
+	font-family: $font-body-light;
 	letter-spacing: 1.8;
 }
 
@@ -88,7 +90,7 @@ header {
 
 .btn-grey:focus {
 	background-color: #afafaf;
-	border-bottom-color: #939393
+	border-bottom-color: #939393;
 }
 
 /*===== SIDEBAR NAV  =====*/
@@ -135,7 +137,7 @@ header {
 		}
 
 		span {
-			font-family: $font-body;
+			font-family: $font-body-light;
 			font-size: 14px;
 			letter-spacing: 1.5;
 			font-weight: 100;
@@ -143,6 +145,7 @@ header {
 
 		.sub-nav span {
 			padding-left: 43px;
+			font-family: $font-body-light;
 		}
 	}
 }
@@ -211,6 +214,7 @@ main {
 	a {
 		color: #7B7B7B;
 		padding-bottom: 7px;
+		font-weight: 300;
 	}
 
 	a:hover, a.active {
@@ -236,7 +240,7 @@ main {
 	border-top: solid #eeeeee 2px;
 	border-left: solid #eeeeee 2px;
 	padding: 15px 25px;
-	font-family: $font-body;
+	font-family: $font-body-regular;
 	float: left;
 }
 
@@ -428,7 +432,7 @@ select option:disabled {
 
 	table tbody td {
 		font-weight: 300;
-		font-family: 'Avenir';
+		font-family: $font-body-regular;
 		padding-left: 30px;
 	}
 }
