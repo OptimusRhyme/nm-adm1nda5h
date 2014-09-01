@@ -7,6 +7,7 @@
     <link rel="stylesheet" type="text/css" href="/stylesheets/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="/stylesheets/bootstrap-theme.css">
     <link rel="stylesheet" type="text/css" href="/stylesheets/style.css">
+    <link rel="stylesheet" type="text/css" href="/bootstrap-select/css/bootstrap-select.css">
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 </head>
 <body>
@@ -184,14 +185,18 @@
                         <div class="row">
                             <div class="form-group input-container col-xs-6">
                                 <label class="field-label" for="integration-country">SELECT A COUNTRY</label>
-                                <select name="integration-country" id="integration-country">
-                                    <option value="" disabled selected>Select a country</option>
+                                <select class="selectpicker" name="integration-country" id="integration-country">
+                                    <option value="" disabled selected data-content="<span class='select-placeholder'>Select a country</span>"></option>
+                                    <option value="us">United States</option>
+                                    <option value="ca">Canada</option>
                                 </select>
                             </div>
                             <div class="form-group input-container col-xs-6">
                                 <label class="field-label" for="integration-gateway">SELECT A PAYMENT GATEWAY</label>
-                                <select name="integration-gateway" id="integration-gateway">
-                                    <option value="" disabled selected>Select a payment gateway</option>
+                                <select class="selectpicker" name="integration-gateway" id="integration-gateway">
+                                    <option value="" disabled selected data-content="<span class='select-placeholder'>Select a payment gateway</span>"></option>
+                                    <option value="us">United States</option>
+                                    <option value="ca">Canada</option>
                                 </select>
                             </div>
                         </div>
@@ -262,6 +267,7 @@
     </aside><!-- Help Bar -->
 
     <script src="/scripts/jquery/dist/jquery.js"></script>
+    <script src="/bootstrap-select/js/bootstrap-select.js"></script>
     <script src="/scripts/script.js"></script>
     <script src="/scripts/modernizr/modernizr.js"></script>
     <script src="/scripts/bootstrap.js"></script>

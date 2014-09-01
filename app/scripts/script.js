@@ -27,6 +27,8 @@ $("#toggle-help").click(function() {
 	}
 });
 
+$('.selectpicker').selectpicker();
+
 
 //ColorPicker
 $('.color-picker').colpick({ 
@@ -39,4 +41,5 @@ $('.color-picker').colpick({
 	}).keyup(function() {
 		$(this).colpickSetColor(this.value);
 });
+
 
