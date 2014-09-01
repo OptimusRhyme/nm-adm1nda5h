@@ -33,7 +33,7 @@ header {
 }
 
 .breadcrumbs {
-	display: inline-block;
+	float: left;
 	font-size: 22px;
 	font-family: $font-body-light;
 	letter-spacing: 1.8;
@@ -41,8 +41,12 @@ header {
 
 .header-nav-wrapper {
 	float: right;
-	display: inline-block;
 	margin-bottom: 20px;
+}
+
+.btn-wrapper {
+	margin-bottom: 20px;
+	text-align: right;
 }
 
 .header-btn {
@@ -228,7 +232,7 @@ main {
 }
 
 /*===== FORMS =====*/
-#main-container fieldset {
+#main-container .content-container{
 	border-right: solid #eeeeee 2px;
 	margin-bottom: 20px;
 	width: 100%;
@@ -236,15 +240,15 @@ main {
 	.row {
 		margin: 0;
 	}
-}
 
-#main-container .input-group {
-	background: #fff;
-	border-top: solid #eeeeee 2px;
-	border-left: solid #eeeeee 2px;
-	padding: 15px 25px;
-	font-family: $font-body-regular;
-	float: left;
+	.input-container, .table-container {
+		background: #fff;
+		border-top: solid #eeeeee 2px;
+		border-left: solid #eeeeee 2px;
+		padding: 15px 25px;
+		font-family: $font-body-regular;
+		float: left;
+	}
 }
 
 .field-label {
@@ -252,8 +256,12 @@ main {
 	display: block;
 }
 
+.form-group {
+	margin: 0;
+}
+
 /*===== FORM FIELDS =====*/
-.input-group {
+.input-container {
 
 	.form-control {
 		border: none;
@@ -300,7 +308,7 @@ main {
 	cursor: pointer;
 }
 
-.input-group .field-textarea {
+.input-container .field-textarea {
 	resize: none;
 	margin-bottom: 20px;
 	border-radius: 2px;

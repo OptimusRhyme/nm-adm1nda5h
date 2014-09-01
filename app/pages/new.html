@@ -154,29 +154,32 @@
     </nav><!-- Sidebar Navigation-->
     <main>
         <div class="container-fluid" id="main-container">
-            <fieldset>
-                <div class="row">
-                    <div class="input-group col-xs-12">
-                        <label class="field-label" for="path">PATH</label>
-                        <input type="text" id="path" class="form-control field-input" placeholder="What is the title of the page?">
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="input-group col-xs-12">
-                        <label for="new-page-content" class="field-label">CONTENT</label>
-                        <textarea name="new-page-content" id="new-page-content" cols="30" rows="10" class="ckeditor"></textarea>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="input-group col-xs-12 dropshadow">
-                        <label class="field-label" for="logo">LOGO</label>
-                        <div class="field-upload">
-                            <p>Upload image</p>
+            <div class="content-container">
+                <form action="">
+                    <fieldset>
+                        <div class="row">
+                            <div class="form-group input-container col-xs-12">
+                                <label class="field-label" for="path">PATH</label>
+                                <input type="text" id="path" class="form-control field-input" placeholder="What is the title of the page?">
+                            </div>
                         </div>
-                    </div>
-                </div>
-                </div>
-            </fieldset>
+                        <div class="row">
+                            <div class="form-group input-container col-xs-12">
+                                <label for="new-page-content" class="field-label">CONTENT</label>
+                                <textarea name="new-page-content" id="new-page-content" cols="30" rows="10" class="ckeditor"></textarea>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group input-container col-xs-12 dropshadow">
+                                <label class="field-label" for="logo">LOGO</label>
+                                <div class="field-upload">
+                                    <p>Upload image</p>
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
         </div>
     </main><!-- Main Content -->
     <aside>

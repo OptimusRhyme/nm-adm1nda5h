@@ -178,39 +178,43 @@
                     </li>
                 </ul>
             </div>
-            <fieldset>
-                <div class="row">
-                    <div class="input-group col-xs-6">
-                        <label class="field-label" for="integration-country">SELECT A COUNTRY</label>
-                        <select name="integration-country" id="integration-country">
-                            <option value="" disabled selected>Select a country</option>
-                        </select>
-                    </div>
-                    <div class="input-group col-xs-6">
-                        <label class="field-label" for="integration-gateway">SELECT A PAYMENT GATEWAY</label>
-                        <select name="integration-gateway" id="integration-gateway">
-                            <option value="" disabled selected>Select a payment gateway</option>
-                        </select>
-                    </div>
-                </div>
-                <div class="row dropshadow">
-                    <div class="input-group col-xs-6">
-                        <label for="integrations-live" class="field-label">LIVE SETTINGS</label>
-                        <input type="text" id="integrations-live" class="form-control field-input" placeholder="Enter your live credentials">
-                    </div>
-                    <div class="input-group col-xs-6">
-                        <label class="field-label" for="integrations-test">TEST SETTINGS</label>
-                        <input type="text" id="integrations-test" class="form-control field-input" placeholder="Enter your test credentials">
-                    </div>
-                </div>
-            </fieldset>
-            <div class="header-nav-wrapper">
+            <div class="content-container">
+                <form action="">
+                    <fieldset>
+                        <div class="row">
+                            <div class="form-group input-container col-xs-6">
+                                <label class="field-label" for="integration-country">SELECT A COUNTRY</label>
+                                <select name="integration-country" id="integration-country">
+                                    <option value="" disabled selected>Select a country</option>
+                                </select>
+                            </div>
+                            <div class="form-group input-container col-xs-6">
+                                <label class="field-label" for="integration-gateway">SELECT A PAYMENT GATEWAY</label>
+                                <select name="integration-gateway" id="integration-gateway">
+                                    <option value="" disabled selected>Select a payment gateway</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row dropshadow">
+                            <div class="form-group input-container col-xs-6">
+                                <label for="integrations-live" class="field-label">LIVE SETTINGS</label>
+                                <input type="text" id="integrations-live" class="form-control field-input" placeholder="Enter your live credentials">
+                            </div>
+                            <div class="form-group input-container col-xs-6">
+                                <label class="field-label" for="integrations-test">TEST SETTINGS</label>
+                                <input type="text" id="integrations-test" class="form-control field-input" placeholder="Enter your test credentials">
+                            </div>
+                        </div>
+                    </fieldset>
+                </form>
+            </div><!--Content Container -->
+            <div class="btn-wrapper">
                 <button class="btn header-btn btn-grey">CANCEL</button>
                 <button class="btn header-btn btn-green">ADD GATEWAY</button>
             </div>
-            <fieldset>
+            <div class="content-container">
                 <div class="row">
-                    <div class="input-group col-xs-12 dropshadow">
+                    <div class="table-container col-xs-12 dropshadow">
                         <table class="table table-hover">
                             <thead>
                                 <tr>
@@ -247,7 +251,7 @@
                         </table>
                     </div>
                 </div>
-            </fieldset>
+            </div> <!--Content Container -->
         </div>
     </main><!-- Main Content -->
     <aside>

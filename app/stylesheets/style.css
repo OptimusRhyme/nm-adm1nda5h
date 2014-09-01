@@ -58,7 +58,7 @@ header {
 }
 
 .breadcrumbs {
-  display: inline-block;
+  float: left;
   font-size: 22px;
   font-family: "Avenir Light", Helvetica, Arial, sans-serif;
   letter-spacing: 1.8;
@@ -66,8 +66,12 @@ header {
 
 .header-nav-wrapper {
   float: right;
-  display: inline-block;
   margin-bottom: 20px;
+}
+
+.btn-wrapper {
+  margin-bottom: 20px;
+  text-align: right;
 }
 
 .header-btn {
@@ -238,16 +242,15 @@ main .container-fluid {
 }
 
 /*===== FORMS =====*/
-#main-container fieldset {
+#main-container .content-container {
   border-right: solid #eeeeee 2px;
   margin-bottom: 20px;
   width: 100%;
 }
-#main-container fieldset .row {
+#main-container .content-container .row {
   margin: 0;
 }
-
-#main-container .input-group {
+#main-container .content-container .input-container, #main-container .content-container .table-container {
   background: #fff;
   border-top: solid #eeeeee 2px;
   border-left: solid #eeeeee 2px;
@@ -261,25 +264,29 @@ main .container-fluid {
   display: block;
 }
 
+.form-group {
+  margin: 0;
+}
+
 /*===== FORM FIELDS =====*/
-.input-group .form-control {
+.input-container .form-control {
   border: none;
   box-shadow: none;
   padding-left: 0;
   z-index: 0;
 }
-.input-group .form-control:focus {
+.input-container .form-control:focus {
   box-shadow: none;
 }
-.input-group .form-control::-moz-placeholder {
+.input-container .form-control::-moz-placeholder {
   color: #CACACA;
   font-style: italic;
 }
-.input-group .form-control:-ms-input-placeholder {
+.input-container .form-control:-ms-input-placeholder {
   color: #CACACA;
   font-style: italic;
 }
-.input-group .form-control::-webkit-input-placeholder {
+.input-container .form-control::-webkit-input-placeholder {
   color: #CACACA;
   font-style: italic;
 }
@@ -302,7 +309,7 @@ main .container-fluid {
   cursor: pointer;
 }
 
-.input-group .field-textarea {
+.input-container .field-textarea {
   resize: none;
   margin-bottom: 20px;
   border-radius: 2px;

@@ -154,27 +154,31 @@
     </nav><!-- Sidebar Navigation-->
     <main>
         <div class="container-fluid" id="main-container">
-            <fieldset>
-                <div class="row">
-                    <div class="input-group col-xs-12">
-                        <label class="field-label">QUESTION TITLE</label>
-                        <input type="text" id="question-title" class="form-control field-input" placeholder="What is the title of the question?">
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="input-group col-xs-12 dropshadow">
-                        <label class="field-label">QUESTION ANSWER</label>
-                        <input type="text" id="question-answer" class="form-control field-input" placeholder="What is the answer?">
-                    </div>
-                </div>
-            </fieldset>
-            <div class="header-nav-wrapper">
+            <div class="content-container">
+                <form action="">
+                    <fieldset>
+                        <div class="row">
+                            <div class="form-group input-container col-xs-12">
+                                <label class="field-label">QUESTION TITLE</label>
+                                <input type="text" id="question-title" class="form-control field-input" placeholder="What is the title of the question?">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group input-container col-xs-12 dropshadow">
+                                <label class="field-label">QUESTION ANSWER</label>
+                                <input type="text" id="question-answer" class="form-control field-input" placeholder="What is the answer?">
+                            </div>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+            <div class="btn-wrapper">
                 <button class="btn header-btn btn-grey">CANCEL</button>
                 <button class="btn header-btn btn-green">SAVE</button>
             </div>
-            <fieldset>
+            <div class="content-container">
                 <div class="row">
-                    <div class="input-group col-xs-12 dropshadow">
+                    <div class="table-container col-xs-12 dropshadow">
                         <table class="table table-hover">
                             <thead>
                                 <tr>
@@ -219,7 +223,7 @@
                         </table>
                     </div>
                 </div>
-            </fieldset>
+            </div>
         </div>
     </main><!-- Main Content -->
     <aside>

@@ -159,78 +159,82 @@
     </nav><!-- Sidebar Navigation-->
     <main>
         <div class="container-fluid" id="main-container">
-            <fieldset>
-                <div class="row">
-                    <div class="input-group col-xs-12">
-                        <label class="field-label" for="post-title">POST TITLE</label>
-                        <input type="text" id="post-title" class="form-control field-input" placeholder="What is the title of the post?">
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="input-group col-xs-6">
-                        <label class="field-label" for="publish-date">PUBLISH DATE</label>
-                        <select name="publish-date" id="publish-date">
-                            <option value="" disabled selected>When will this be published</option>
-                            <option value="January">1-January</option>
-                            <option value="February">2-February</option>
-                            <option value="March">3-March</option>
-                            <option value="April">4-April</option>
-                            <option value="May">5-May</option>
-                            <option value="June">6-June</option>
-                            <option value="July">7-July</option>
-                            <option value="August">8-August</option>
-                            <option value="September">9-September</option>
-                            <option value="October">10-October</option>
-                            <option value="November">11-November</option>
-                            <option value="December">12-December</option>
-                        </select>
-                    </div>
-                    <div class="input-group col-xs-6">
-                        <label class="field-label" for="slug">SLUG</label>
-                        <input type="text" id="slug" class="form-control field-input" placeholder="Enter a slug">
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="input-group col-xs-12">
-                        <p class="field-label">Hero Image</p>
-                        <label for="hero-blog" class="field-upload">
-                            <input type="file" id="hero-blog" name="hero-blog" class="upload-file">Upload image
-                        </label>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="input-group col-xs-12">
-                        <label for="blog-content" class="field-label">CONTENT</label>
-                        <textarea name="blog-content" id="blog-content" cols="30" rows="10" class="ckeditor"></textarea>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="input-group col-xs-12">
-                        <label for="blog-excerpt" class="field-label">EXCERPT</label>
-                        <textarea name="blog-excerpt" id="blog-excerpt" cols="30" rows="10" class="ckeditor"></textarea>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="input-group col-xs-12">
-                        <label class="field-label" for="author-name">AUTHOR NAME</label>
-                        <input type="text" id="author-name" class="form-control field-input" placeholder="Enter the name of the author">
-                    </div>
-                </div>
-                 <div class="row">
-                    <div class="input-group col-xs-12">
-                        <label class="field-label" for="author-bio">AUTHOR BIO</label>
-                        <input type="text" id="author-bio" class="form-control field-input" placeholder="Enter a bio for the author">
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="input-group col-xs-12 dropshadow">
-                        <p class="field-label">Logo</p>
-                        <label for="hero-logo" class="field-upload">
-                            <input type="file" id="hero-logo" name="hero-logo" class="upload-file">Upload image
-                        </label>
-                    </div>
-                </div>
-            </fieldset>
+            <div class="content-container">
+                <form action="">
+                    <fieldset>
+                        <div class="row">
+                            <div class="form-group input-container col-xs-12">
+                                <label class="field-label" for="post-title">POST TITLE</label>
+                                <input type="text" id="post-title" class="form-control field-input" placeholder="What is the title of the post?">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group input-container col-xs-6">
+                                <label class="field-label" for="publish-date">PUBLISH DATE</label>
+                                <select name="publish-date" id="publish-date">
+                                    <option value="" disabled selected>When will this be published</option>
+                                    <option value="January">1-January</option>
+                                    <option value="February">2-February</option>
+                                    <option value="March">3-March</option>
+                                    <option value="April">4-April</option>
+                                    <option value="May">5-May</option>
+                                    <option value="June">6-June</option>
+                                    <option value="July">7-July</option>
+                                    <option value="August">8-August</option>
+                                    <option value="September">9-September</option>
+                                    <option value="October">10-October</option>
+                                    <option value="November">11-November</option>
+                                    <option value="December">12-December</option>
+                                </select>
+                            </div>
+                            <div class="form-group input-container col-xs-6">
+                                <label class="field-label" for="slug">SLUG</label>
+                                <input type="text" id="slug" class="form-control field-input" placeholder="Enter a slug">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group input-container col-xs-12">
+                                <p class="field-label">Hero Image</p>
+                                <label for="hero-blog" class="field-upload">
+                                    <input type="file" id="hero-blog" name="hero-blog" class="upload-file">Upload image
+                                </label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group input-container col-xs-12">
+                                <label for="blog-content" class="field-label">CONTENT</label>
+                                <textarea name="blog-content" id="blog-content" cols="30" rows="10" class="ckeditor"></textarea>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group input-container col-xs-12">
+                                <label for="blog-excerpt" class="field-label">EXCERPT</label>
+                                <textarea name="blog-excerpt" id="blog-excerpt" cols="30" rows="10" class="ckeditor"></textarea>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group input-container col-xs-12">
+                                <label class="field-label" for="author-name">AUTHOR NAME</label>
+                                <input type="text" id="author-name" class="form-control field-input" placeholder="Enter the name of the author">
+                            </div>
+                        </div>
+                         <div class="row">
+                            <div class="form-group input-container col-xs-12">
+                                <label class="field-label" for="author-bio">AUTHOR BIO</label>
+                                <input type="text" id="author-bio" class="form-control field-input" placeholder="Enter a bio for the author">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group input-container col-xs-12 dropshadow">
+                                <p class="field-label">Logo</p>
+                                <label for="hero-logo" class="field-upload">
+                                    <input type="file" id="hero-logo" name="hero-logo" class="upload-file">Upload image
+                                </label>
+                            </div>
+                        </div>
+                    </fieldset>
+                </form>
+            </div><!-- Content Container -->
         </div>
     </main><!-- Main Content -->
     <aside>

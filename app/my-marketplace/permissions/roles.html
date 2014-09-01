@@ -168,35 +168,39 @@
                     </li>
                 </ul>
             </div>
-            <fieldset>
-                <div class="row">
-                    <div class="input-group col-xs-12">
-                        <label for="role-title" class="field-label">ROLE TITLE</label>
-                        <input type="text" id="role-title" class="form-control field-input" placeholder="What is the role's title?">
-                    </div>
-                </div>
-                <div class="row dropshadow">
-                    <div class="input-group col-xs-12">
-                        <label class="field-label" for="roles">USER ROLE</label>
-                        <select name="user-roles" id="user-roles">
-                            <option value="" disabled selected>Access to</option>
-                            <option value="pages">Pages</option>
-                            <option value="theme">Theme</option>
-                            <option value="services">Services</option>
-                            <option value="my-marketplace">My Marketplace</option>
-                            <option value="mailers">Mailers</option>
-                            <option value="manage-partners">Manage Partners</option>
-                            <option value="payment-transfers">Payment Transfers</option>
-                            <option value="analytics">Analytics</option>
-                            <option value="blog">Blog</option>
-                            <option value="support-center">Support Center</option>
-                            <option value="crm">CRM</option>
-                            <option value="settings">Settings</option>
-                        </select>
-                    </div>
-                </div>
-            </fieldset>
-            <div class="header-nav-wrapper">
+            <div class="content-container">
+                <form action="">
+                    <fieldset>
+                        <div class="row">
+                            <div class="form-group input-container col-xs-12">
+                                <label for="role-title" class="field-label">ROLE TITLE</label>
+                                <input type="text" id="role-title" class="form-control field-input" placeholder="What is the role's title?">
+                            </div>
+                        </div>
+                        <div class="row dropshadow">
+                            <div class="table-container col-xs-12">
+                                <label class="field-label" for="roles">USER ROLE</label>
+                                <select name="user-roles" id="user-roles">
+                                    <option value="" disabled selected>Access to</option>
+                                    <option value="pages">Pages</option>
+                                    <option value="theme">Theme</option>
+                                    <option value="services">Services</option>
+                                    <option value="my-marketplace">My Marketplace</option>
+                                    <option value="mailers">Mailers</option>
+                                    <option value="manage-partners">Manage Partners</option>
+                                    <option value="payment-transfers">Payment Transfers</option>
+                                    <option value="analytics">Analytics</option>
+                                    <option value="blog">Blog</option>
+                                    <option value="support-center">Support Center</option>
+                                    <option value="crm">CRM</option>
+                                    <option value="settings">Settings</option>
+                                </select>
+                            </div>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+            <div class="btn-wrapper">
                 <button class="btn header-btn btn-grey">CANCEL</button>
                 <button class="btn header-btn btn-green">ADD USER</button>
             </div>
