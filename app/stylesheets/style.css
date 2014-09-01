@@ -46,6 +46,10 @@ html body {
   border-bottom: solid #eeeeee 5px;
 }
 
+.alert {
+  color: #e83d33;
+}
+
 /*===== HEADER =====*/
 header {
   background: #fff;
