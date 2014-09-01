@@ -26,3 +26,17 @@ $("#toggle-help").click(function() {
 		$("#toggle-help").attr("class", "fa fa-long-arrow-left")	
 	}
 });
+
+
+//ColorPicker
+$('.color-picker').colpick({ 
+	layout: 'rgbhex',
+	submit: 0,
+	onChange: function(hsb, hex, rgb, el, bySetColor) {
+		$(el).children('.color-thumbnail').css('background-color', '#' + hex);
+		if(!bySetColor) $(el).children('.color-select').val(hex);
+		}
+	}).keyup(function() {
+		$(this).colpickSetColor(this.value);
+});
+
