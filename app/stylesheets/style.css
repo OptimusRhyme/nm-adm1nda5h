@@ -313,10 +313,13 @@ main .container-fluid {
   cursor: pointer;
 }
 
-.input-container .field-textarea {
-  resize: none;
-  margin-bottom: 20px;
-  border-radius: 2px;
+.field-textarea {
+  border: 1px solid #eee;
+  width: 100%;
+}
+
+.field-textarea:focus {
+  outline: none;
 }
 
 .bootstrap-select {
