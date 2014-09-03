@@ -3235,8 +3235,8 @@ tbody.collapse.in {
 }
 .dropup .dropdown-menu,
 .navbar-fixed-bottom .dropdown .dropdown-menu {
-  top: auto;
-  bottom: 100%;
+  /*top: auto;
+  bottom: 100%;*/
   margin-bottom: 1px;
 }
 @media (min-width: 768px) {

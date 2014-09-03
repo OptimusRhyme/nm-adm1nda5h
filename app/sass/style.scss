@@ -26,7 +26,7 @@ html body {
 
 /*===== HEADER =====*/
 
-header {
+.main-header {
 	background: #fff;
 	border-bottom: 2px solid #e9e9e9 ;
 	height: 61px;
@@ -142,6 +142,12 @@ header {
 			width: 100%;
 		}
 
+		/*==Fix for Firefox auto-focus ==*/
+		a:focus {
+			background: none;
+			outline: none;
+		}
+
 		a:hover, a:hover > .fa, a.active, a.active > .fa {
 			background: #f7f7f7;
 			border-left-color: $color-brand;
@@ -178,7 +184,7 @@ header {
 	height: 100%;
 	padding: 0 5px;
 	position: fixed;
-	right: -316;
+	right: -316px;
 	width: 346px;
 	z-index: 0;	
 }
@@ -194,15 +200,12 @@ header {
 }
 
 /*===== MAIN CONTENT =====*/
-main {
+
+#main-container {
 	margin: 90px 0 25px 230px;
 	position: absolute;
-	width: 66%;
-
-	.container-fluid {
-		width: 800px;
-		margin: 0;
-	}
+	width: 40%;
+	min-width: 330px;
 }
 
 .sub-header-nav {
@@ -236,6 +239,8 @@ main {
 }
 
 /*===== FORMS =====*/
+
+
 #main-container .content-container{
 	border-right: solid #eeeeee 2px;
 	margin-bottom: 20px;
@@ -450,6 +455,8 @@ main {
 .panel {
 	border-color: #ebebeb;
 	border-bottom: 0;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
 	border-radius: 2px;
 }
 
