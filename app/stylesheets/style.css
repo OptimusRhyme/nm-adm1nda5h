@@ -217,8 +217,8 @@ html body {
 #main-container {
   margin: 90px 0 25px 230px;
   position: absolute;
-  width: 40%;
-  min-width: 330px;
+  width: 45%;
+  min-width: 475px;
 }
 
 .sub-header-nav {
@@ -258,11 +258,15 @@ html body {
 }
 #main-container .content-container .input-container, #main-container .content-container .table-container {
   background: #fff;
-  border-top: solid #eeeeee 2px;
-  border-left: solid #eeeeee 2px;
+  border-top: solid #eee 2px;
+  border-left: solid #eee 2px;
   padding: 15px 25px;
   font-family: "Avenir Regular", Helvetica, Arial, sans-serif;
   float: left;
+}
+#main-container .content-container .table-container {
+  min-width: 475px;
+  border-right: solid #eee 2px;
 }
 
 .field-label {
@@ -387,7 +391,7 @@ html body {
   width: 80%;
   position: relative;
   bottom: 20px;
-  margin: 0 0 0 10px;
+  margin: 20px 0 0 0;
 }
 
 .color-thumbnail.header {
@@ -485,4 +489,11 @@ html body {
 .admin-avatar {
   height: 50px;
   float: right;
+}
+
+/*===== MEDIA QUERIES =====*/
+@media (max-width: 700px) {
+  .main-header {
+    min-width: 700px;
+  }
 }
