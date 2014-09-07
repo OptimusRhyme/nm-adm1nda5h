@@ -216,47 +216,135 @@
                 </ul>
             </div>
             <div class="content-container">
-                <form action="">
-                    <fieldset>
-                        <div class="row">
-                            <div class="form-group input-container col-xs-6">
-                                <label class="field-label" for="font-title">SITE TITLE</label>
-                                <select class="selectpicker" name="font-title" id="font-title">
-                                    <option value="" disabled selected data-content="<span class='select-placeholder'>Select a font</span>"></option>
-                                    <option value="avenir-next">Avenir Next</option>
-                                    <option value="brandon-grotesque">Brandon Grotesque</option>
-                                </select>
-                            </div>
-                            <div class="form-group input-container col-xs-6">
-                                <label class="field-label" for="font-body">BODY TEXT</label>
-                                <select class="selectpicker" name="font-body" id="font-body">
-                                    <option value="" disabled selected data-content="<span class='select-placeholder'>Select a font</span>"></option>
-                                    <option value="avenir-next">Avenir Next</option>
-                                    <option value="brandon-grotesque">Brandon Grotesque</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="row dropshadow">
-                            <div class="form-group input-container col-xs-6">
-                                <label class="field-label" for="font-navigation">NAVIGATION</label>
-                                <select class="selectpicker" name="font-navigation" id="font-navigation">
-                                    <option value="" disabled selected data-content="<span class='select-placeholder'>Select a font</span>"></option>
-                                    <option value="avenir-next">Avenir Next</option>
-                                    <option value="brandon-grotesque">Brandon Grotesque</option>
-                                </select>
-                            </div>
-                            <div class="form-group input-container col-xs-6">
-                                <label class="field-label" for="font-footer">FOOTER TEXT</label>
-                                <select class="selectpicker" name="font-footer" id="font-footer">
-                                    <option value="" disabled selected data-content="<span class='select-placeholder'>Select a font</span>"></option>
-                                    <option value="avenir-next">Avenir Next</option>
-                                    <option value="brandon-grotesque">Brandon Grotesque</option>
-                                </select>
-                            </div>
-                        </div>
-                    </fieldset>
-                </form>
-            </div>
+                <div class="row">
+                    <div class="table-container col-xs-12 dropshadow">
+                        <table class="table table-hover">
+                            <tbody>
+                                <tr>
+                                    <td>REGULAR (EOT)</td>
+                                    <td id="1"></td>
+                                    <td class="table-body-link">
+                                        <label for="regular-eot">
+                                            Upload file
+                                            <input id="regular-eot" type="file" name="1" class="upload-font">
+                                        </label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>REGULAR (TTF)</td>
+                                    <td id="2"></td>
+                                    <td class="table-body-link">
+                                        <label for="regular-ttf">
+                                            Upload file
+                                            <input id="regular-ttf" type="file" name="2" class="upload-font">
+                                        </label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>REGULAR (SVG)</td>
+                                    <td id="3"></td>
+                                    <td class="table-body-link">
+                                        <label for="regular-svg">
+                                            Upload file
+                                            <input id="regular-svg" type="file" name="3" class="upload-font">
+                                        </label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>REGULAR (WOFF)</td>
+                                    <td id="4"></td>
+                                    <td class="table-body-link">
+                                        <label for="regular-woff">
+                                            Upload file
+                                            <input id="regular-woff" type="file" name="4" class="upload-font">
+                                        </label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>MEDIUM (EOT)</td>
+                                    <td id="5"></td>
+                                    <td class="table-body-link">
+                                        <label for="medium-eot">
+                                            Upload file
+                                            <input id="medium-eot" type="file" name="5" class="upload-font">
+                                        </label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>MEDIUM (TTF)</td>
+                                    <td id="6"></td>
+                                    <td class="table-body-link">
+                                        <label for="medium-ttf">
+                                            Upload file
+                                            <input id="medium-ttf" type="file" name="6" class="upload-font">
+                                        </label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>MEDIUM (SVG)</td>
+                                    <td id="7"></td>
+                                    <td class="table-body-link">
+                                        <label for="medium-svg">
+                                            Upload file
+                                            <input id="medium-svg" type="file" name="7" class="upload-font">
+                                        </label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>MEDIUM (WOFF)</td>
+                                    <td id="8"></td>
+                                    <td class="table-body-link">
+                                        <label for="medium-woff">
+                                            Upload file
+                                            <input id="medium-woff" type="file" name="8" class="upload-font">
+                                        </label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>BOLD (EOT)</td>
+                                    <td id="9"></td>
+                                    <td class="table-body-link">
+                                        <label for="bold-eot">
+                                            Upload file
+                                            <input id="bold-eot" type="file" name="9" class="upload-font">
+                                        </label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>BOLD (TTF)</td>
+                                    <td id="10"></td>
+                                    <td class="table-body-link">
+                                        <label for="bold-ttf">
+                                            Upload file
+                                            <input id="bold-ttf" type="file" name="10" class="upload-font">
+                                        </label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>BOLD (SVG)</td>
+                                    <td id="11"></td>
+                                    <td class="table-body-link">
+                                        <label for="bold-svg">
+                                            Upload file
+                                            <input id="bold-svg" type="file" name="11" class="upload-font">
+                                        </label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>BOLD (WOFF)</td>
+                                    <td id="12"></td>
+                                    <td class="table-body-link">
+                                        <label for="bold-woff">
+                                            Upload file
+                                            <input id="bold-woff" type="file" name="12" class="upload-font">
+                                        </label>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div> <!--Content Container -->
         </div>
     </main><!-- Main Content -->
     <aside>

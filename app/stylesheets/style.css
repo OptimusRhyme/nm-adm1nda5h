@@ -462,6 +462,10 @@ html body {
   float: right;
 }
 
+.upload-font {
+  display: none !important;
+}
+
 /*===== TABLES =====*/
 .table {
   font-size: 14px;
@@ -480,16 +484,17 @@ html body {
 .table .table-head-link, .table .table-body-link {
   text-align: right;
 }
-.table .table-body-link > a {
+.table .table-body-link > a, .table .table-body-link > label {
   visibility: hidden;
   margin-left: 15px;
+  color: #1a7fbb;
 }
 
 .table-hover tbody tr:hover td {
   background: #ebf6fc;
 }
 
-.table-hover tbody tr:hover td a {
+.table-hover tbody tr:hover td a, .table-hover tbody tr:hover td label {
   visibility: visible;
 }
 

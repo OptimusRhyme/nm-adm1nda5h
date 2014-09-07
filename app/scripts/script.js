@@ -27,8 +27,12 @@ $("#toggle-help").click(function() {
 	}
 });
 
-//Prefences Checkbox slide
+//Fonts
+$('.upload-font').change(function() {
+	$('#' + $(this).attr('name')).append($(this).val().split('\\').pop());
+});
 
+//Prefences Checkbox slide
 $(".cancellation-settings").hide();
 $(".password-settings").hide();
 
