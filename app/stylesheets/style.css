@@ -247,6 +247,18 @@ html body {
   border-bottom: solid #1a7fbb 2px;
 }
 
+.preferences label {
+  float: left !important;
+}
+
+.preferences > .preferences-row > .input-container {
+  border-top: none !important;
+}
+
+.cancellation-settings > .input-container {
+  border-bottom: solid #eee 2px;
+}
+
 /*===== FORMS =====*/
 #main-container .content-container {
   border-right: solid #eeeeee 2px;
@@ -266,7 +278,6 @@ html body {
 }
 #main-container .content-container .table-container {
   min-width: 475px;
-  border-right: solid #eee 2px;
 }
 
 .field-label {
@@ -408,6 +419,10 @@ html body {
 
 .color-thumbnail.list {
   background: #65df7d;
+}
+
+.preferences-checkbox {
+  float: right;
 }
 
 /*===== TABLES =====*/

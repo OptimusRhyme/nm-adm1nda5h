@@ -238,6 +238,20 @@ html body {
 	}
 }
 
+.preferences {
+	label {
+		float: left !important;
+	}
+}
+
+.preferences > .preferences-row > .input-container {
+	border-top: none !important;
+}
+
+.cancellation-settings > .input-container {
+	border-bottom: solid #eee 2px;
+}
+
 /*===== FORMS =====*/
 
 
@@ -261,7 +275,6 @@ html body {
 
 	.table-container {
 		min-width: 475px;
-		border-right: solid #eee 2px;
 	}
 }
 
@@ -410,6 +423,10 @@ html body {
 }
 .color-thumbnail.list {
 	background: #65df7d;
+}
+
+.preferences-checkbox {
+	float: right;
 }
 
 /*===== TABLES =====*/

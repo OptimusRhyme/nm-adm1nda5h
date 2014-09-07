@@ -27,6 +27,29 @@ $("#toggle-help").click(function() {
 	}
 });
 
+//Prefences Checkbox slide
+
+$(".cancellation-settings").hide();
+$(".password-settings").hide();
+
+$("#cancellation-check").change(function() {
+	if($(this).is(':checked')) {
+		$(".cancellation-settings").slideDown();		
+	}
+	else {
+		$(".cancellation-settings").slideUp();
+	}
+})
+
+$("#password-check").change(function() {
+	if($(this).is(':checked')) {
+		$(".password-settings").slideDown();		
+	}
+	else {
+		$(".password-settings").slideUp();
+	}
+})
+
 //ColorPicker
 $('.color-picker').click(function() {
 	$('.color-picker').colpick({ 

@@ -15,11 +15,10 @@
 <body>
     <header>
         <div class="main-header">
-            <div class="breadcrumbs">Administrators</div>
+            <div class="breadcrumbs">Basic Configuration</div>
         </div>
     </header><!-- Brand and Breadcrumbs-->
     <nav>
-        <nav>
         <div class="nav-wrapper"  role="navigation">
             <div class="brand">
                 <img src="/images/brand-logo.png" alt="" class="brand-logo">
@@ -72,9 +71,9 @@
                         <i class='fa fa-bank'></i>
                         <span>My Marketplace</span>
                     </a>
-                    <ul id="my-marketplace-sub" class="sub-nav collapse in">
+                    <ul id="my-marketplace-sub" class="sub-nav collapse">
                         <li>
-                            <a href="/my-marketplace/permissions/admins.html" class="active">
+                            <a href="/my-marketplace/permissions/admins.html">
                                 <span>Permissions</span>
                             </a>
                         </li><!-- Permissions -->
@@ -154,9 +153,9 @@
                         <i class='fa fa-gears'></i>
                         <span>Settings</span>
                     </a>
-                    <ul id="settings-sub" class="sub-nav collapse">
+                    <ul id="settings-sub" class="sub-nav collapse in">
                         <li>
-                            <a href="/settings/configuration/domains.html">
+                            <a href="/settings/configuration/domains.html" class="active">
                                 <span>Basic Configuration</span>
                             </a>
                         </li>
@@ -181,41 +180,20 @@
                 <ul>
                     <li>
                         <a href="" class="active">
-                            Manage Admins
+                            Domains
                         </a>
                     </li>
                     <li>
-                        <a href="/my-marketplace/permissions/roles.html">
-                            Manage Roles
+                        <a href="/settings/configuration/meta.html">
+                            Meta
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/settings/configuration/preferences.html">
+                            Preferences
                         </a>
                     </li>
                 </ul>
-            </div>
-            <div class="content-container">
-                <form action="">
-                    <fieldset>
-                        <div class="row">
-                            <div class="form-group input-container col-xs-6">
-                                <label for="admin-name" class="field-label">ADMIN NAME</label>
-                                <input type="text" id="admin-name" class="form-control field-input" placeholder="Who is the new admin?">
-                            </div>
-                            <div class="form-group input-container col-xs-6">
-                                <label for="user-email" class="field-label">USER EMAIL</label>
-                                <input type="text" id="user-email" class="form-control field-input" placeholder="What is the user's email?">
-                            </div>
-                        </div>
-                        <div class="row dropshadow">
-                            <div class="form-group input-container col-xs-12">
-                                <label for="user-role" class="field-label">USER ROLE</label>
-                                <input type="text" id="user-role" class="form-control field-input" placeholder="What is the user's role?">
-                            </div>
-                        </div>
-                    </fieldset>
-                </form>
-            </div>
-            <div class="btn-wrapper">
-                <button class="btn header-btn btn-grey">CANCEL</button>
-                <button class="btn header-btn btn-green">ADD USER</button>
             </div>
             <div class="content-container">
                 <div class="row">
@@ -223,34 +201,39 @@
                         <table class="table table-hover">
                             <thead>
                                 <tr>
-                                    <th>ADMIN</th>
-                                    <th>ROLE</th>
+                                    <th>DOMAIN NAMES</th>
                                     <td class="table-head-link">
-                                        <a href="#">+ Add User</a>
+                                        <a href="new">+ Add new domain</a>
                                     </td>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td>Kanye West</td>
-                                    <td>Marketplace Owner</td>
+                                    <td>api.desksnear.me</td>
                                     <td class="table-body-link">
                                         <a href="#">Edit</a>
-                                        <a href="#">Delete</a>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td>Jared Calinisan</td>
-                                    <td>Marketplace Admin</td>
+                                    <td>desksnear.me</td>
                                     <td class="table-body-link">
                                         <a href="#">Edit</a>
-                                        <a href="#">Delete</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>staging.desksnear.me</td>
+                                    <td class="table-body-link">
+                                        <a href="#">Edit</a>
                                     </td>
                                 </tr>
                             </tbody>
                         </table>
                     </div>
                 </div>
+            </div> <!--Content Container -->
+            <div class="btn-wrapper">
+                <button class="btn header-btn btn-grey">CANCEL</button>
+                <button class="btn header-btn btn-green">SAVE</button>
             </div>
         </div>
     </main><!-- Main Content -->
