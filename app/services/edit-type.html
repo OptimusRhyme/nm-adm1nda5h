@@ -7,7 +7,6 @@
     <link rel="stylesheet" type="text/css" href="/stylesheets/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="/stylesheets/bootstrap-theme.css">
     <link rel="stylesheet" type="text/css" href="/stylesheets/style.css">
-    <link rel="stylesheet" type="text/css" href="/bootstrap-select/css/bootstrap-select.css">
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
     <script src="/scripts/jquery/dist/jquery.js"></script>
     <!--[if IE 8]><style>#help-bar {display: none;}</style><![endif]-->
@@ -16,7 +15,7 @@
 <body>
     <header>
         <div class="main-header">
-            <div class="breadcrumbs">Edit Attribute</div>
+            <div class="breadcrumbs">Edit Transactable Type</div>
         </div>
     </header><!-- Brand and Breadcrumbs-->
     <nav>
@@ -201,86 +200,15 @@
                 <form action="">
                     <fieldset>
                         <div class="row">
-                            <div class="form-group input-container col-xs-6">
-                                <label class="field-label" for="attribute-name">NAME</label>
-                                <input type="text" id="attribute-name" class="form-control field-input" placeholder="Enter a name for your transactable type attribute">
-                            </div>
-                            <div class="form-group input-container col-xs-6">
-                                <label class="field-label" for="attribute-label">LABEL</label>
-                                <input type="text" id="attribute-label" class="form-control field-input" placeholder="Enter a label for your transactable type attribute">
-                            </div>
+                        <div class="form-group input-container col-xs-12">
+                            <label for="favorable-pricing">FAVORABLE PRICING RATE</label>
+                            <input type="checkbox" class="preferences-checkbox" id="favorable-pricing">
+                        </div>
                         </div>
                         <div class="row">
-                            <div class="form-group input-container col-xs-6">
-                                <label class="field-label" for="attribute-type">ATTRIBUTE TYPE</label>
-                                <select class="selectpicker" name="attribute-type" id="attribute-type">
-                                    <option value="" disabled selected data-content="<span class='select-placeholder'>Choose a type</span>"></option>
-                                    <option value="Array">Array</option>
-                                    <option value="String">String</option>
-                                    <option value="Integer">Integer</option>
-                                    <option value="Float">Float</option>
-                                    <option value="Decimal">Decimal</option>
-                                    <option value="Datetime">Datetime</option>
-                                    <option value="Time">Time</option>
-                                    <option value="Date">Date</option>
-                                    <option value="Binary">Binary</option>
-                                    <option value="Boolean">Boolean</option>
-                                </select>
-                            </div>
-                            <div class="form-group input-container col-xs-6">
-                                <label class="field-label" for="attribute-tag">ATTRIBUTE TYPE</label>
-                                <select class="selectpicker" name="attribute-tag" id="attribute-tag">
-                                    <option value="" disabled selected data-content="<span class='select-placeholder'>Choose an HTML tag</span>"></option>
-                                    <option value="Input">Input</option>
-                                    <option value="Select">Select</option>
-                                    <option value="Switch">Switch</option>
-                                    <option value="Textarea">Textarea</option>
-                                    <option value="Checkbox">Check box</option>
-                                    <option value="Radio">Radio buttons</option>
-                                    <option value="Checklist">Check box list</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="form-group input-container col-xs-6">
-                                <label class="field-label" for="attribute-placeholder">PLACEHOLDER</label>
-                                <input type="text" id="attribute-placeholder" class="form-control field-input" placeholder="A placeholder for the attribute">
-                            </div>
-                            <div class="form-group input-container col-xs-6">
-                                <label class="field-label" for="attribute-prompt">PROMPT</label>
-                                <input type="text" id="attribute-prompt" class="form-control field-input" placeholder="A prompt for the attribute">
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="form-group input-container col-xs-6">
-                                <label class="field-label" for="default-value">DEFAULT VALUE</label>
-                                <input type="text" id="default-value" class="form-control field-input" placeholder="Default value for the attribute">
-                            </div>
-                            <div class="form-group input-container col-xs-6">
-                                <label class="field-label" for="attribute-hint">HINT</label>
-                                <input type="text" id="attribute-hint" class="form-control field-input" placeholder="A hint for the attribute">
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="form-group input-container col-xs-12">
-                                <label class="field-label" for="valid-values">VALID VALUES</label>
-                                <input type="text" id="valid-values" class="form-control field-input" placeholder="The attribute values">
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="form-group input-container col-xs-6">
-                                <label class="field-label" for="input-html">INPUT HTML OPTIONS</label>
-                                <input type="text" id="input-html" class="form-control field-input">
-                            </div>
-                            <div class="form-group input-container col-xs-6">
-                                <label class="field-label" for="wrapper-html">WRAPPER HTML OPTIONS</label>
-                                <input type="text" id="wrapper-html" class="form-control field-input">
-                            </div>
-                        </div>
-                        <div class="row dropshadow">
-                            <div class="form-group input-container col-xs-12">
-                                <label for="attribute-public">PUBLIC</label>
-                                <input type="checkbox" class="preferences-checkbox" id="attribute-public">
+                            <div class="form-group input-container col-xs-12 dropshadow">
+                                <label class="field-label" for="transactable-name">Name</label>
+                                <input type="text" id="transactable-name" class="form-control field-input" placeholder="The name of your trasnactable type">
                             </div>
                         </div>
                     </fieldset>
@@ -299,7 +227,6 @@
         </div>
     </aside><!-- Help Bar -->
 
-    <script src="/bootstrap-select/js/bootstrap-select.js"></script>
     <script src="/scripts/script.js"></script>
     <script src="/scripts/modernizr/modernizr.js"></script>
     <script src="/scripts/bootstrap.js"></script>
