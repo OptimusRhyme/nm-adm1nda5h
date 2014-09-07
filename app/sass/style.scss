@@ -24,6 +24,10 @@ html body {
 	color: #e83d33;
 }
 
+.partners h4 {
+	font-family: $font-body-regular;
+}
+
 /*===== HEADER =====*/
 
 .main-header {
@@ -266,7 +270,7 @@ html body {
 
 #main-container .content-container{
 	border-right: solid #eeeeee 2px;
-	margin-bottom: 10px;
+	margin-bottom: 15px;
 	width: 100%;
 
 	.row {

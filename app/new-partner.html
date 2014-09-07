@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Dashboard</title>
+    <meta name="description" content="">
+    <link rel="stylesheet" type="text/css" href="/stylesheets/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="/stylesheets/bootstrap-theme.css">
+    <link rel="stylesheet" type="text/css" href="/stylesheets/style.css">
+    <link rel="stylesheet" type="text/css" href="/bootstrap-select/css/bootstrap-select.css">
+    <link rel="stylesheet" href="/scripts/colpick/css/colpick.css" type="text/css"/>
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <script src="/scripts/jquery/dist/jquery.js"></script>
+    <!--[if IE 8]><style>#help-bar {display: none;}</style><![endif]-->
+    <!--[if IE 9]><style>#help-bar {display: none;}</style><![endif]-->
+</head>
+<body>
+    <header>
+        <div class="main-header">
+            <div class="breadcrumbs">New Partner</div>
+            <div class="header-nav-wrapper">
+                <button class="btn header-btn btn-grey">CANCEL</button>
+                <button class="btn header-btn btn-green">SAVE</button>
+            </div>
+        </div>
+    </header><!-- Brand and Breadcrumbs-->
+    <nav>
+        <div class="nav-wrapper"  role="navigation">
+            <div class="brand">
+                <img src="/images/brand-logo.png" alt="" class="brand-logo">
+            </div>
+            <ul class="sidebar nav nav-stacked">
+                <li class="active" id="recent-items">
+                    <a href="/recent-items.html">
+                        <i class='fa fa-history'></i>
+                        <span>Recent Items</span>
+                    </a>
+                </li><!-- Recent Items -->
+                <li id="dashboard">
+                    <a href="/dashboard.html">
+                        <i class='fa fa-tachometer'></i>
+                        <span>Dashboard</span>
+                    </a>
+                </li><!-- Dashboard -->
+                <li id="pages">
+                    <a href="#pages-sub" data-toggle="collapse" data-parent="#pages">
+                        <i class='fa fa-files-o'></i>
+                        <span>Pages</span>
+                    </a>
+                    <ul id="pages-sub" class="sub-nav collapse">
+                        <li>
+                            <a href="/pages/homepage.html">
+                                <span>Homepage</span>
+                            </a>
+                        </li><!-- Homepage -->
+                        <li>
+                            <a href="/pages/all.html">
+                                <span>All Pages</span>
+                            </a><!-- All Pages -->
+                        </li>
+                        <li>
+                            <a href="/pages/redirect.html">
+                                <span>Redirects</span>
+                            </a><!-- All Pages -->
+                        </li>
+                    </ul><!-- Pages Sub Nav -->
+                </li><!-- Pages -->
+                <li id="theme">
+                    <a href="/theme/colors.html">
+                        <i class='fa fa-picture-o'></i>
+                        <span>Theme</span>
+                    </a>
+                </li><!-- Theme -->
+                <li id="services">
+                    <a href="/services/attributes.html">
+                        <i class='fa fa-cubes'></i>
+                        <span>Services</span>
+                    </a>
+                </li><!-- Services -->
+                <li id="my-marketplace">
+                    <a href="#my-marketplace-sub" data-toggle="collapse" data-parent="#my-marketplace">
+                        <i class='fa fa-bank'></i>
+                        <span>My Marketplace</span>
+                    </a>
+                    <ul id="my-marketplace-sub" class="sub-nav collapse">
+                        <li>
+                            <a href="/my-marketplace/locations/types.html">
+                                <span>Locations</span>
+                            </a>
+                        </li><!-- Locations -->
+                        <li>
+                            <a href="/my-marketplace/listings/types.html">
+                                <span>Listings</span>
+                            </a>
+                        </li><!-- Listings -->
+                        <li>
+                            <a href="/my-marketplace/permissions/admins.html">
+                                <span>Permissions</span>
+                            </a>
+                        </li><!-- Permissions -->
+                        <li>
+                            <a href="/my-marketplace/integrations/payment.html">
+                                <span>Integrations</span>
+                            </a>
+                        </li><!-- Integrations -->
+                        <li>
+                            <a href="/my-marketplace/pricing.html">
+                                <span>Pricing</span>
+                            </a>
+                        </li><!-- Pricing -->
+                        <li>
+                            <a href="/my-marketplace/terminology.html">
+                                <span>Terminology</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/my-marketplace/confidential-files.html">
+                                <span>Confidential Files</span>
+                            </a>
+                        </li>
+                    </ul><!-- My Marketplace Sub Nav -->
+                </li><!-- My Marketplace -->
+                <li id="mailers">
+                    <a href="/mailers.html">
+                        <i class='fa fa-envelope'></i>
+                        <span>Mailers</span>
+                    </a>
+                </li><!-- Mailers -->
+                <li id="manage-partners">
+                    <a href="/manage-partners.html" class="active">
+                        <i class='fa fa-briefcase'></i>
+                        <span>Manage Partners</span>
+                    </a>
+                </li><!-- Manage Partners -->
+                <li id="payment-transfers">
+                    <a href="/payment-transfers/all.html">
+                        <i class='fa fa-credit-card'></i>
+                        <span>Payment Transfers</span>
+                    </a>
+                </li><!-- Payment Transfers -->
+                <li id="analytics">
+                    <a href="/analytics.html">
+                        <i class='fa fa-bar-chart-o'></i>
+                        <span>Analytics</span>
+                    </a>
+                </li><!-- Analytics -->
+                <li id="blog">
+                    <a href="/blog/manage-posts.html">
+                        <i class='fa fa-pencil'></i>
+                        <span>Blog</span>
+                    </a>
+                </li><!-- Blog -->
+                <li id="support-center">
+                    <a href="#support-center-sub" data-toggle="collapse" data-parent="#support-center">
+                        <i class='fa fa-life-ring'></i>
+                        <span>Support Center</span>
+                    </a>
+                    <ul id="support-center-sub" class="sub-nav collapse">
+                        <li>
+                            <a href="/support/ticketing.html">
+                                <span>Customer ticketing</span>
+                            </a>
+                        </li><!-- Customer Ticketing -->
+                        <li>
+                            <a href="/support/faq.html">
+                                <span>Manage FAQ</span>
+                            </a>
+                        </li><!-- Manage FAQ -->
+                    </ul><!-- Support Center Sub Nav -->
+                </li><!-- Support Center -->
+                <li id="crm">
+                    <a href="/crm.html">
+                        <i class='fa fa-users'></i>
+                        <span>CRM</span>
+                    </a>
+                </li><!-- CRM -->
+                <li id="settings">
+                    <a href="#settings-sub" data-toggle="collapse" data-parent="#settings">
+                        <i class='fa fa-gears'></i>
+                        <span>Settings</span>
+                    </a>
+                    <ul id="settings-sub" class="sub-nav collapse">
+                        <li>
+                            <a href="/settings/configuration/domains.html">
+                                <span>Basic Configuration</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/settings/support.html">
+                                <span>Support</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/settings/info.html">
+                                <span>Info</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li><!-- Settings -->
+            </ul> <!-- Sidebar List -->
+        </div><!-- Nav Wrapper -->
+    </nav><!-- Sidebar Navigation-->
+    <main>
+        <div class="container-fluid partners" id="main-container">
+            <h4>Partner Basic Info</h4>
+            <div class="content-container">
+                <form action="">
+                    <fieldset>
+                        <div class="row">
+                            <div class="form-group input-container col-xs-6">
+                                <label class="field-label" for="partner-name">NEW PARTNER NAME</label>
+                                <input type="text" id="partner-name" class="form-control field-input" placeholder="The name of your partner">
+                            </div>
+                            <div class="form-group input-container col-xs-6">
+                                <label class="field-label" for="domain-name">DOMAIN NAME</label>
+                                <input type="text" id="domain-name" class="form-control field-input" placeholder="Your partner's domain name">
+                            </div>
+                        </div>
+                        <div class="row dropshadow">
+                            <div class="form-group input-container col-xs-12">
+                                <label class="field-label" for="partner-scoping">SEARCH SCOPE OPTIONS</label>
+                                <select class="selectpicker" name="partner-scoping" id="partner-scoping">
+                                    <option value="" disabled selected data-content="<span class='select-placeholder'>Select how listings should be scoped</span>"></option>
+                                    <option value="no-scoping">No scoping</option>
+                                    <option value="all-listings">All associated listings</option>
+                                </select>
+                            </div>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+            <h4>Title and Description</h4>
+            <div class="content-container">
+                <form action="">
+                    <fieldset>
+                        <div class="row">
+                            <div class="form-group input-container col-xs-6">
+                                <label class="field-label" for="partner-theme-name">NAME</label>
+                                <input type="text" id="partner-theme-name" class="form-control field-input" placeholder="The name of your partner's theme">
+                            </div>
+                            <div class="form-group input-container col-xs-6">
+                                <label class="field-label" for="partner-site-name">SITE NAME</label>
+                                <input type="text" id="partner-site-name" class="form-control field-input" placeholder="Your partner's site name">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group input-container col-xs-6">
+                                <label class="field-label" for="partner-tagline">TAGLINE</label>
+                                <input type="text" id="partner-tagline" class="form-control field-input" placeholder="The name of your partner's tagline">
+                            </div>
+                            <div class="form-group input-container col-xs-6">
+                                <label class="field-label" for="partner-meta-title">META TITLE</label>
+                                <input type="text" id="partner-meta-title" class="form-control field-input" placeholder="Your partner's meta-title">
+                            </div>
+                        </div>
+                        <div class="row dropshadow">
+                            <div class="form-group input-container col-xs-12">
+                                <label class="field-label" for="partner-meta-description">META DESCRIPTION</label>
+                                <input type="text" id="partner-meta-description" class="form-control field-input" placeholder="Your partner's meta-description">
+                            </div>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+            <h4>Brand</h4>
+            <div class="content-container">
+                <form action="">
+                    <fieldset>
+                        <div class="row">
+                            <div class="form-group input-container col-xs-4">
+                                <p class="field-label">HERO</p>
+                                <label for="partner-hero" class="field-upload">
+                                    <input type="file" id="partner-hero" name="partner-hero" class="upload-file">Upload image
+                                </label>
+                            </div>
+                            <div class="form-group input-container col-xs-4">
+                                <p class="field-label">LOGO</p>
+                                <label for="partner-logo" class="field-upload">
+                                    <input type="file" id="partner-logo" name="partner-logo" class="upload-file">Upload image
+                                </label>
+                            </div>
+                            <div class="form-group input-container col-xs-4">
+                                <p class="field-label">ICON</p>
+                                <label for="partner-icon" class="field-upload">
+                                    <input type="file" id="partner-icon" name="partner-icon" class="upload-file">Upload image
+                                </label>
+                            </div>
+                        </div>
+                        <div class="row dropshadow">
+                            <div class="form-group input-container col-xs-4">
+                                <p class="field-label">FAVICON</p>
+                                <label for="partner-favicon" class="field-upload">
+                                    <input type="file" id="partner-favicon" name="partner-favicon" class="upload-file">Upload image
+                                </label>
+                            </div>
+                            <div class="form-group input-container col-xs-4">
+                                <p class="field-label">RETINA LOGO</p>
+                                <label for="partner-logo-retina" class="field-upload">
+                                    <input type="file" id="partner-logo-retina" name="partner-logo" class="upload-file">Upload image
+                                </label>
+                            </div>
+                            <div class="form-group input-container col-xs-4">
+                                <p class="field-label">RETINA ICON</p>
+                                <label for="partner-icon-retina" class="field-upload">
+                                    <input type="file" id="partner-icon-retina" name="partner-icon-retina" class="upload-file">Upload image
+                                </label>
+                            </div>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+            <h4>Contact and Support</h4>
+            <div class="content-container">
+                <form action="">
+                    <fieldset>
+                        <div class="row">
+                            <div class="form-group input-container col-xs-6">
+                                <label class="field-label" for="partner-phone">PHONE NUMBER</label>
+                                <input type="text" id="partner-phone" class="form-control field-input" placeholder="Your partner's business phone">
+                            </div>
+                            <div class="form-group input-container col-xs-6">
+                                <label class="field-label" for="partner-email">CONTACT EMAIL</label>
+                                <input type="text" id="partner-email" class="form-control field-input" placeholder="Your partner's contact email">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group input-container col-xs-6">
+                                <label class="field-label" for="partner-support-email">SUPPORT EMAIL</label>
+                                <input type="text" id="partner-support-email" class="form-control field-input" placeholder="Your partner's support email">
+                            </div>
+                            <div class="form-group input-container col-xs-6">
+                                <label class="field-label" for="partner-support-url">SUPPORT URL</label>
+                                <input type="text" id="partner-support-url" class="form-control field-input" placeholder="Your partner's support url">
+                            </div>
+                        </div>
+                        <div class="row dropshadow">
+                            <div class="form-group input-container col-xs-12">
+                                <label class="field-label" for="partner-address">ADDRESS</label>
+                                <input type="text" id="partner-address" class="form-control field-input" placeholder="Your partner's business address">
+                            </div>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+            <h4>Social Properties</h4>
+            <div class="content-container">
+                <form action="">
+                    <fieldset>
+                         <div class="row">
+                            <div class="form-group input-container col-xs-6">
+                                <label class="field-label" for="partner-blog-url">BLOG URL</label>
+                                <input type="text" id="partner-blog-url" class="form-control field-input" placeholder="Enter your blog URL">
+                            </div>
+                            <div class="form-group input-container col-xs-6">
+                                <label class="field-label" for="partner-facebook-url">FACEBOOK URL</label>
+                                <input type="text" id="fpartner-acebook-url" class="form-control field-input" placeholder="Enter your facebook URL">
+                            </div>
+                        </div>
+                         <div class="row dropshadow">
+                            <div class="form-group input-container col-xs-6">
+                                <label class="field-label" for="partner-twitter-url">TWITTER URL</label>
+                                <input type="text" id="partner-twitter-url" class="form-control field-input" placeholder="Enter your twitter-url">
+                            </div>
+                            <div class="form-group input-container col-xs-6">
+                                <label class="field-label" for="partner-google-url">GOOGLE+ URL</label>
+                                <input type="text" id="partner-google-url" class="form-control field-input" placeholder="Enter your google+ url">
+                            </div>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+            <h4>Colors</h4>
+            <div class="content-container">
+                <form action="">
+                    <fieldset>
+                        <div class="row">
+                            <div class="form-group input-container col-xs-6">
+                                <label class="field-label" for="partner-color-header">HEADER</label>
+                                <div class="color-picker">
+                                    <div class="color-thumbnail header"></div>
+                                    <input class="color-select form-control" name="partner-color-header" id="partner-color-header" placeholder="Select a color">
+                                </div>
+                            </div>
+                            <div class="form-group input-container col-xs-6">
+                                <label class="field-label" for="partner-color-footer">FOOTER</label>
+                                <div class="color-picker">
+                                    <div class="color-thumbnail footer"></div>
+                                    <input class="color-select form-control" name="partner-color-footer" id="partner-color-footer" placeholder="Select a color">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row dropshadow">
+                            <div class="form-group input-container col-xs-6">
+                                <label class="field-label" for="partner-color-search">SEARCH BUTTON</label>
+                                <div class="color-picker">
+                                    <div class="color-thumbnail search"></div>
+                                    <input class="color-select form-control" name="partner-color-footer" id="partner-color-footer" placeholder="Select a color">
+                                </div>
+                            </div>
+                            <div class="form-group input-container col-xs-6">
+                                <label class="field-label" for="partner-color-list">LIST BUTTON</label>
+                                <div class="color-picker">
+                                    <div class="color-thumbnail list"></div>
+                                    <input class="color-select form-control" name="partner-color-footer" id="partner-color-footer" placeholder="Select a color">
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+            <h4>Homepage</h4>
+            <div class="content-container">
+                <form action="">
+                    <fieldset>
+                        <div class="row">
+                            <div class="form-group input-container col-xs-12">
+                                <label class="field-label" for="partner-tagline">TAGLINE</label>
+                                <input type="text" id="partner-tagline" class="form-control field-input" placeholder="Enter your marketplace tagline">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group input-container col-xs-12">
+                                <label for="partner-homepage-html" class="field-label">HOMEPAGE HTML</label>
+                                <textarea name="partner-homepage-html" id="partner-homepage-html" cols="30" rows="20" class="field-textarea"></textarea>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group input-container col-xs-12 dropshadow">
+                                <label for="partner-homepage-css" class="field-label">HOMEPAGE CSS</label>
+                                <textarea name="partner-homepage-css" id="partner-homepage-css" cols="30" rows="20" class="field-textarea"></textarea>
+                            </div>
+                        </div>
+                    </fieldset>
+                </form>
+            </div><!-- Content Container -->
+        </div>
+    </main><!-- Main Content -->
+    <aside>
+        <div id="help-bar" class="closed">
+            <i id="toggle-help" class="fa fa-long-arrow-left"></i>
+            <div class="help-bar-content"></div><!-- Help Bar Content -->
+        </div>
+    </aside><!-- Help Bar -->
+
+    <script src="/scripts/colpick/js/colpick.js" type="text/javascript"></script>
+    <script src="/bootstrap-select/js/bootstrap-select.js"></script>
+    <script src="/scripts/script.js"></script>
+    <script src="/scripts/modernizr/modernizr.js"></script>
+    <script src="/scripts/bootstrap.js"></script>
+
+</body>
+</html>
