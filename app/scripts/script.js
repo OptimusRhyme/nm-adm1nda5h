@@ -54,6 +54,40 @@ $("#password-check").change(function() {
 	}
 })
 
+//Charts
+var randomScalingFactor = function(){ return Math.round(Math.random()*100)};
+		var lineChartData = {
+			labels : ["January","February","March","April","May","June","July"],
+			datasets : [
+				{
+					label: "My First dataset",
+					fillColor : "rgba(220,220,220,0.2)",
+					strokeColor : "rgba(220,220,220,1)",
+					pointColor : "rgba(220,220,220,1)",
+					pointStrokeColor : "#fff",
+					pointHighlightFill : "#fff",
+					pointHighlightStroke : "rgba(220,220,220,1)",
+					data : [randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor()]
+				},
+			]
+
+		}
+
+	window.onload = function(){
+		var ctxRevenue = document.getElementById("revenue").getContext("2d");
+		window.myLine = new Chart(ctxRevenue).Line(lineChartData, {
+			responsive: true
+		});
+		var ctxBookings = document.getElementById("bookings").getContext("2d");
+		window.myLine = new Chart(ctxBookings).Line(lineChartData, {
+			responsive: true
+		});
+		var ctxListings = document.getElementById("listings").getContext("2d");
+		window.myLine = new Chart(ctxListings).Line(lineChartData, {
+			responsive: true
+		});
+	}
+
 //ColorPicker
 $('.color-picker').click(function() {
 	$('.color-picker').colpick({ 
@@ -69,6 +103,7 @@ $('.color-picker').click(function() {
 })
 
 $('.selectpicker').selectpicker();
+
 
 
 
