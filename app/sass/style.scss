@@ -229,6 +229,7 @@ html body {
 		color: #7B7B7B;
 		padding-bottom: 7px;
 		font-weight: 300;
+		font-family: $font-body-regular;
 	}
 
 	a:hover, a.active {
@@ -303,12 +304,12 @@ html body {
 		border-left: solid #46B272 4px;
 	}
 
-	.line-item-category:hover {
+	.line-item-container.hover:hover {
 		background: #ebf6fc;
 		cursor: pointer;
 	}
 
-	.line-item-category:hover .line-item-btn {
+	.line-item-container.hover:hover .line-item-btn {
 		visibility: visible;
 	}
 

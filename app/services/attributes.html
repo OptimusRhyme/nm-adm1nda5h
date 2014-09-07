@@ -15,11 +15,10 @@
 <body>
     <header>
         <div class="main-header">
-            <div class="breadcrumbs">Administrators</div>
+            <div class="breadcrumbs">Listings</div>
         </div>
     </header><!-- Brand and Breadcrumbs-->
     <nav>
-        <nav>
         <div class="nav-wrapper"  role="navigation">
             <div class="brand">
                 <img src="/images/brand-logo.png" alt="" class="brand-logo">
@@ -62,7 +61,7 @@
                     </a>
                 </li><!-- Theme -->
                 <li id="services">
-                    <a href="/services/attributes.html">
+                    <a href="/services.html" class="active">
                         <i class='fa fa-cubes'></i>
                         <span>Services</span>
                     </a>
@@ -72,7 +71,7 @@
                         <i class='fa fa-bank'></i>
                         <span>My Marketplace</span>
                     </a>
-                    <ul id="my-marketplace-sub" class="sub-nav collapse in">
+                    <ul id="my-marketplace-sub" class="sub-nav collapse">
                         <li>
                             <a href="/my-marketplace/locations/types.html">
                                 <span>Locations</span>
@@ -84,7 +83,7 @@
                             </a>
                         </li><!-- Listings -->
                         <li>
-                            <a href="/my-marketplace/permissions/admins.html" class="active">
+                            <a href="/my-marketplace/permissions/admins.html">
                                 <span>Permissions</span>
                             </a>
                         </li><!-- Permissions -->
@@ -192,78 +191,93 @@
     </nav><!-- Sidebar Navigation-->
     <main>
         <div class="container-fluid" id="main-container">
-            <div class="sub-header-nav">
-                <ul>
-                    <li>
-                        <a href="" class="active">
-                            Manage Admins
-                        </a>
-                    </li>
-                    <li>
-                        <a href="/my-marketplace/permissions/roles.html">
-                            Manage Roles
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <div class="content-container">
-                <form action="">
-                    <fieldset>
-                        <div class="row">
-                            <div class="form-group input-container col-xs-6">
-                                <label for="admin-name" class="field-label">ADMIN NAME</label>
-                                <input type="text" id="admin-name" class="form-control field-input" placeholder="Who is the new admin?">
-                            </div>
-                            <div class="form-group input-container col-xs-6">
-                                <label for="user-email" class="field-label">USER EMAIL</label>
-                                <input type="text" id="user-email" class="form-control field-input" placeholder="What is the user's email?">
-                            </div>
-                        </div>
-                        <div class="row dropshadow">
-                            <div class="form-group input-container col-xs-12">
-                                <label for="user-role" class="field-label">USER ROLE</label>
-                                <input type="text" id="user-role" class="form-control field-input" placeholder="What is the user's role?">
-                            </div>
-                        </div>
-                    </fieldset>
-                </form>
-            </div>
-            <div class="btn-wrapper">
-                <button class="btn header-btn btn-grey">CANCEL</button>
-                <button class="btn header-btn btn-green">ADD USER</button>
-            </div>
-            <div class="content-container">
+            <div class="content-container line-item">
                 <div class="row">
-                    <div class="table-container col-xs-12 dropshadow">
-                        <table class="table table-hover">
-                            <thead>
-                                <tr>
-                                    <th>ADMIN</th>
-                                    <th>ROLE</th>
-                                    <td class="table-head-link">
-                                        <a href="#">+ Add User</a>
-                                    </td>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>Kanye West</td>
-                                    <td>Marketplace Owner</td>
-                                    <td class="table-body-link">
-                                        <a href="#">Edit</a>
-                                        <a href="#">Delete</a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>Jared Calinisan</td>
-                                    <td>Marketplace Admin</td>
-                                    <td class="table-body-link">
-                                        <a href="#">Edit</a>
-                                        <a href="#">Delete</a>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
+                    <div class="line-item-container hover line-item-category">
+                        <label for="">LISTING</label>
+                        <span>
+                            <a href="edit-type.html" class="line-item-btn">+</a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="content-container line-item">
+                <div class="row">
+                    <div class="line-item-container hover line-item-child">
+                        <label for="">Hourly price cents</label>
+                        <span>
+                            <a href="edit.html" class="line-item-btn">+</a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="content-container line-item hover">
+                <div class="row">
+                    <div class="line-item-container hover line-item-child">
+                        <label for="">Monthly price cents</label>
+                        <span>
+                            <a href="edit.html" class="line-item-btn">+</a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="content-container line-item hover">
+                <div class="row">
+                    <div class="line-item-container hover line-item-child">
+                        <label for="">Weekly price cents</label>
+                        <span>
+                            <a href="edit.html" class="line-item-btn">+</a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="content-container line-item hover">
+                <div class="row">
+                    <div class="line-item-container hover line-item-child">
+                        <label for="">Daily price cents</label>
+                        <span>
+                            <a href="edit.html" class="line-item-btn">+</a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="content-container line-item hover">
+                <div class="row">
+                    <div class="line-item-container hover line-item-child">
+                        <label for="">Last request photos sent at</label>
+                        <span>
+                            <a href="edit.html" class="line-item-btn">+</a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="content-container line-item hover">
+                <div class="row">
+                    <div class="line-item-container hover line-item-child">
+                        <label for="">Rank</label>
+                        <span>
+                            <a href="edit.html" class="line-item-btn">+</a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="content-container line-item hover">
+                <div class="row">
+                    <div class="line-item-container hover line-item-child">
+                        <label for="">Delta</label>
+                        <span>
+                            <a href="edit.html" class="line-item-btn">+</a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="content-container line-item hover">
+                <div class="row">
+                    <div class="line-item-container hover line-item-child">
+                        <label for="">Name</label>
+                        <span>
+                            <a href="edit.html" class="line-item-btn">+</a>
+                        </span>
                     </div>
                 </div>
             </div>

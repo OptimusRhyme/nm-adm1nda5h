@@ -240,6 +240,7 @@ html body {
   color: #7B7B7B;
   padding-bottom: 7px;
   font-weight: 300;
+  font-family: "Avenir Regular", Helvetica, Arial, sans-serif;
 }
 .sub-header-nav a:hover, .sub-header-nav a.active {
   color: #1a7fbb;
@@ -300,11 +301,11 @@ html body {
 #main-container .content-container .line-item-category {
   border-left: solid #46B272 4px;
 }
-#main-container .content-container .line-item-category:hover {
+#main-container .content-container .line-item-container.hover:hover {
   background: #ebf6fc;
   cursor: pointer;
 }
-#main-container .content-container .line-item-category:hover .line-item-btn {
+#main-container .content-container .line-item-container.hover:hover .line-item-btn {
   visibility: visible;
 }
 #main-container .content-container .line-item-child {

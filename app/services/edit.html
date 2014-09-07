@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>Near Me Dashboard</title>
+    <title>Dashboard</title>
     <meta name="description" content="">
     <link rel="stylesheet" type="text/css" href="/stylesheets/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="/stylesheets/bootstrap-theme.css">
@@ -15,11 +15,10 @@
 <body>
     <header>
         <div class="main-header">
-            <div class="breadcrumbs">Administrators</div>
+            <div class="breadcrumbs">Terminology</div>
         </div>
     </header><!-- Brand and Breadcrumbs-->
     <nav>
-        <nav>
         <div class="nav-wrapper"  role="navigation">
             <div class="brand">
                 <img src="/images/brand-logo.png" alt="" class="brand-logo">
@@ -84,7 +83,7 @@
                             </a>
                         </li><!-- Listings -->
                         <li>
-                            <a href="/my-marketplace/permissions/admins.html" class="active">
+                            <a href="/my-marketplace/permissions/admins.html">
                                 <span>Permissions</span>
                             </a>
                         </li><!-- Permissions -->
@@ -99,7 +98,7 @@
                             </a>
                         </li><!-- Pricing -->
                         <li>
-                            <a href="/my-marketplace/terminology.html">
+                            <a href="/my-marketplace/terminology.html" class="active">
                                 <span>Terminology</span>
                             </a>
                         </li>
@@ -192,80 +191,73 @@
     </nav><!-- Sidebar Navigation-->
     <main>
         <div class="container-fluid" id="main-container">
-            <div class="sub-header-nav">
-                <ul>
-                    <li>
-                        <a href="" class="active">
-                            Manage Admins
-                        </a>
-                    </li>
-                    <li>
-                        <a href="/my-marketplace/permissions/roles.html">
-                            Manage Roles
-                        </a>
-                    </li>
-                </ul>
-            </div>
             <div class="content-container">
                 <form action="">
                     <fieldset>
                         <div class="row">
                             <div class="form-group input-container col-xs-6">
-                                <label for="admin-name" class="field-label">ADMIN NAME</label>
-                                <input type="text" id="admin-name" class="form-control field-input" placeholder="Who is the new admin?">
+                                <label class="field-label" for="transactable-name">NAME</label>
+                                <input type="text" id="transactable-name" class="form-control field-input" placeholder="Enter a name for your transactable type attribute">
                             </div>
                             <div class="form-group input-container col-xs-6">
-                                <label for="user-email" class="field-label">USER EMAIL</label>
-                                <input type="text" id="user-email" class="form-control field-input" placeholder="What is the user's email?">
+                                <label class="field-label" for="transactable-label">LABEL</label>
+                                <input type="text" id="transactable-label" class="form-control field-input" placeholder="Enter a label for your transactable type attribute">
                             </div>
                         </div>
-                        <div class="row dropshadow">
-                            <div class="form-group input-container col-xs-12">
-                                <label for="user-role" class="field-label">USER ROLE</label>
-                                <input type="text" id="user-role" class="form-control field-input" placeholder="What is the user's role?">
+                        <div class="row">
+                            <div class="form-group input-container col-xs-6">
+                                <label class="field-label" for="transactable-noun">ATTRIBUTE TYPE</label>
+                                <input type="text" id="lessor" class="form-control field-input" placeholder="What will be lessor">
+                            </div>
+                            <div class="form-group input-container col-xs-6">
+                                <label class="field-label" for="transactable-noun">LESSEE</label>
+                                <input type="text" id="lessee" class="form-control field-input" placeholder="Please input a lessee">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group input-container col-xs-6">
+                                <label class="field-label" for="transactable-noun">LESSOR</label>
+                                <input type="text" id="lessor" class="form-control field-input" placeholder="What will be lessor">
+                            </div>
+                            <div class="form-group input-container col-xs-6">
+                                <label class="field-label" for="transactable-noun">LESSEE</label>
+                                <input type="text" id="lessee" class="form-control field-input" placeholder="Please input a lessee">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group input-container col-xs-6">
+                                <label class="field-label" for="transactable-noun">LESSOR</label>
+                                <input type="text" id="lessor" class="form-control field-input" placeholder="What will be lessor">
+                            </div>
+                            <div class="form-group input-container col-xs-6">
+                                <label class="field-label" for="transactable-noun">LESSEE</label>
+                                <input type="text" id="lessee" class="form-control field-input" placeholder="Please input a lessee">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group input-container col-xs-12 dropshadow">
+                                <label class="field-label" for="transactable-noun">LESSOR</label>
+                                <input type="text" id="lessor" class="form-control field-input" placeholder="What will be lessor">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group input-container col-xs-6">
+                                <label class="field-label" for="transactable-noun">LESSOR</label>
+                                <input type="text" id="lessor" class="form-control field-input" placeholder="What will be lessor">
+                            </div>
+                            <div class="form-group input-container col-xs-6">
+                                <label class="field-label" for="transactable-noun">LESSEE</label>
+                                <input type="text" id="lessee" class="form-control field-input" placeholder="Please input a lessee">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group input-container col-xs-12 dropshadow">
+                                <label class="field-label" for="transactable-noun">LESSOR</label>
+                                <input type="text" id="lessor" class="form-control field-input" placeholder="What will be lessor">
                             </div>
                         </div>
                     </fieldset>
                 </form>
-            </div>
-            <div class="btn-wrapper">
-                <button class="btn header-btn btn-grey">CANCEL</button>
-                <button class="btn header-btn btn-green">ADD USER</button>
-            </div>
-            <div class="content-container">
-                <div class="row">
-                    <div class="table-container col-xs-12 dropshadow">
-                        <table class="table table-hover">
-                            <thead>
-                                <tr>
-                                    <th>ADMIN</th>
-                                    <th>ROLE</th>
-                                    <td class="table-head-link">
-                                        <a href="#">+ Add User</a>
-                                    </td>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>Kanye West</td>
-                                    <td>Marketplace Owner</td>
-                                    <td class="table-body-link">
-                                        <a href="#">Edit</a>
-                                        <a href="#">Delete</a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>Jared Calinisan</td>
-                                    <td>Marketplace Admin</td>
-                                    <td class="table-body-link">
-                                        <a href="#">Edit</a>
-                                        <a href="#">Delete</a>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
             </div>
         </div>
     </main><!-- Main Content -->
