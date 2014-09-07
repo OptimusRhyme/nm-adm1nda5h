@@ -16,15 +16,10 @@
 <body>
     <header>
         <div class="main-header">
-            <div class="breadcrumbs">Homepage</div>
-            <div class="header-nav-wrapper">
-                <button class="btn header-btn btn-grey">CANCEL</button>
-                <button class="btn header-btn btn-green">SAVE</button>
-            </div>
+            <div class="breadcrumbs">Edit</div>
         </div>
     </header><!-- Brand and Breadcrumbs-->
     <nav>
-        <nav>
         <div class="nav-wrapper"  role="navigation">
             <div class="brand">
                 <img src="/images/brand-logo.png" alt="" class="brand-logo">
@@ -47,9 +42,9 @@
                         <i class='fa fa-files-o'></i>
                         <span>Pages</span>
                     </a>
-                    <ul id="pages-sub" class="sub-nav collapse in">
+                    <ul id="pages-sub" class="sub-nav collapse">
                         <li>
-                            <a href="/pages/homepage.html" class="active">
+                            <a href="/pages/homepage.html">
                                 <span>Homepage</span>
                             </a>
                         </li><!-- Homepage -->
@@ -77,7 +72,7 @@
                         <i class='fa fa-bank'></i>
                         <span>My Marketplace</span>
                     </a>
-                    <ul id="my-marketplace-sub" class="sub-nav collapse">
+                    <ul id="my-marketplace-sub" class="sub-nav collapse in">
                         <li>
                             <a href="/my-marketplace/permissions/admins.html">
                                 <span>Permissions</span>
@@ -99,7 +94,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="/my-marketplace/confidential-files.html">
+                            <a href="/my-marketplace/confidential-files.html" class="active">
                                 <span>Confidential Files</span>
                             </a>
                         </li>
@@ -192,19 +187,35 @@
                     <fieldset>
                         <div class="row">
                             <div class="form-group input-container col-xs-12">
-                                <label for="homepage-html" class="field-label">HOMEPAGE HTML</label>
-                                <textarea name="homepage-html" id="homepage-html" cols="30" rows="20" class="field-textarea"></textarea>
+                                <label class="field-label" for="caption">CAPTION</label>
+                                <input type="text" id="caption" class="form-control field-input">
                             </div>
                         </div>
                         <div class="row">
-                            <div class="form-group input-container col-xs-12 dropshadow">
-                                <label for="homepage-css" class="field-label">HOMEPAGE CSS</label>
-                                <textarea name="homepage-css" id="homepage-css" cols="30" rows="20" class="field-textarea"></textarea>
+                            <div class="form-group input-container col-xs-12">
+                                <label class="field-label" for="comment">COMMENT</label>
+                                <input type="text" id="comment" class="form-control field-input" placeholder="Write down any notes about this file here">
+                            </div>
+                        </div>
+                        <div class="row dropshadow">
+                            <div class="form-group input-container col-xs-12">
+                                <label class="field-label" for="category">CATEGORY</label>
+                                <select class="selectpicker" name="category" id="category">
+                                    <option value="" disabled selected data-content="<span class='select-placeholder'>Select a category</span>"></option>
+                                    <option value="pending">Pending</option>
+                                    <option value="rejected">Rejected</option>
+                                    <option value="questioned">Questioned</option>
+                                    <option value="accepted">Accepted</option>
+                                </select>
                             </div>
                         </div>
                     </fieldset>
                 </form>
-            </div><!-- Content Container -->
+            </div>
+            <div class="btn-wrapper">
+                <button class="btn header-btn btn-grey">CANCEL</button>
+                <button class="btn header-btn btn-green">SAVE</button>
+            </div>
         </div>
     </main><!-- Main Content -->
     <aside>
@@ -214,11 +225,11 @@
         </div>
     </aside><!-- Help Bar -->
 
+
     <script src="/bootstrap-select/js/bootstrap-select.js"></script>
     <script src="/scripts/script.js"></script>
     <script src="/scripts/modernizr/modernizr.js"></script>
     <script src="/scripts/bootstrap.js"></script>
-    <script src="/ckeditor/ckeditor.js"></script>
 
 </body>
 </html>

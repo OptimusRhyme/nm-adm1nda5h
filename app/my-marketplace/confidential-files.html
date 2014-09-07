@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>Dashboard</title>
+    <title>Near Me Dashboard</title>
     <meta name="description" content="">
     <link rel="stylesheet" type="text/css" href="/stylesheets/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="/stylesheets/bootstrap-theme.css">
@@ -16,15 +16,10 @@
 <body>
     <header>
         <div class="main-header">
-            <div class="breadcrumbs">Homepage</div>
-            <div class="header-nav-wrapper">
-                <button class="btn header-btn btn-grey">CANCEL</button>
-                <button class="btn header-btn btn-green">SAVE</button>
-            </div>
+            <div class="breadcrumbs">Confidential Files</div>
         </div>
     </header><!-- Brand and Breadcrumbs-->
     <nav>
-        <nav>
         <div class="nav-wrapper"  role="navigation">
             <div class="brand">
                 <img src="/images/brand-logo.png" alt="" class="brand-logo">
@@ -47,9 +42,9 @@
                         <i class='fa fa-files-o'></i>
                         <span>Pages</span>
                     </a>
-                    <ul id="pages-sub" class="sub-nav collapse in">
+                    <ul id="pages-sub" class="sub-nav collapse">
                         <li>
-                            <a href="/pages/homepage.html" class="active">
+                            <a href="/pages/homepage.html">
                                 <span>Homepage</span>
                             </a>
                         </li><!-- Homepage -->
@@ -77,7 +72,7 @@
                         <i class='fa fa-bank'></i>
                         <span>My Marketplace</span>
                     </a>
-                    <ul id="my-marketplace-sub" class="sub-nav collapse">
+                    <ul id="my-marketplace-sub" class="sub-nav collapse in">
                         <li>
                             <a href="/my-marketplace/permissions/admins.html">
                                 <span>Permissions</span>
@@ -99,7 +94,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="/my-marketplace/confidential-files.html">
+                            <a href="/my-marketplace/confidential-files.html" class="active">
                                 <span>Confidential Files</span>
                             </a>
                         </li>
@@ -187,24 +182,63 @@
     </nav><!-- Sidebar Navigation-->
     <main>
         <div class="container-fluid" id="main-container">
+            <div class="sub-header-nav">
+                <ul>
+                    <li>
+                        <a href="" class="active">
+                            Uploaded
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Pending
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Rejected
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Questioned
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Accepted
+                        </a>
+                    </li>
+                </ul>
+            </div>
             <div class="content-container">
-                <form action="">
-                    <fieldset>
-                        <div class="row">
-                            <div class="form-group input-container col-xs-12">
-                                <label for="homepage-html" class="field-label">HOMEPAGE HTML</label>
-                                <textarea name="homepage-html" id="homepage-html" cols="30" rows="20" class="field-textarea"></textarea>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="form-group input-container col-xs-12 dropshadow">
-                                <label for="homepage-css" class="field-label">HOMEPAGE CSS</label>
-                                <textarea name="homepage-css" id="homepage-css" cols="30" rows="20" class="field-textarea"></textarea>
-                            </div>
-                        </div>
-                    </fieldset>
-                </form>
-            </div><!-- Content Container -->
+                <div class="row">
+                    <div class="table-container col-xs-12 dropshadow">
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>FILE NAME</th>
+                                    <th>CAPTION</th>
+                                    <th>COMMENTS</th>
+                                    <th>CREATED</th>
+                                    <th><th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Huddle Campus</td>
+                                    <td>Hire me please!</td>
+                                    <td>Don't hire this guy</td>
+                                    <td>8/12/14 18:12</td>
+                                    <td class="table-body-link">
+                                        <a href="confidential-files-edit.html">Edit</a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div> <!--Content Container -->
         </div>
     </main><!-- Main Content -->
     <aside>
@@ -218,7 +252,6 @@
     <script src="/scripts/script.js"></script>
     <script src="/scripts/modernizr/modernizr.js"></script>
     <script src="/scripts/bootstrap.js"></script>
-    <script src="/ckeditor/ckeditor.js"></script>
 
 </body>
 </html>
