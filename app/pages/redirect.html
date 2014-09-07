@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>Near Me Dashboard</title>
+    <title>Dashboard</title>
     <meta name="description" content="">
     <link rel="stylesheet" type="text/css" href="/stylesheets/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="/stylesheets/bootstrap-theme.css">
@@ -15,7 +15,7 @@
 <body>
     <header>
         <div class="main-header">
-            <div class="breadcrumbs">Manage Payments</div>
+            <div class="breadcrumbs">Add New Redirect</div>
         </div>
     </header><!-- Brand and Breadcrumbs-->
     <nav>
@@ -41,7 +41,7 @@
                         <i class='fa fa-files-o'></i>
                         <span>Pages</span>
                     </a>
-                    <ul id="pages-sub" class="sub-nav collapse">
+                    <ul id="pages-sub" class="sub-nav collapse in">
                         <li>
                             <a href="/pages/homepage.html">
                                 <span>Homepage</span>
@@ -53,7 +53,7 @@
                             </a><!-- All Pages -->
                         </li>
                         <li>
-                            <a href="/pages/redirect.html">
+                            <a href="/pages/redirect.html" class="active">
                                 <span>Redirects</span>
                             </a><!-- All Pages -->
                         </li>
@@ -127,7 +127,7 @@
                     </a>
                 </li><!-- Manage Partners -->
                 <li id="payment-transfers">
-                    <a href="/payment-transfers/all.html" class="active">
+                    <a href="/payment-transfers/all.html">
                         <i class='fa fa-credit-card'></i>
                         <span>Payment Transfers</span>
                     </a>
@@ -196,54 +196,31 @@
     </nav><!-- Sidebar Navigation-->
     <main>
         <div class="container-fluid" id="main-container">
-             <div class="sub-header-nav">
-                <ul>
-                    <li>
-                        <a href="/payment-transfers/all.html">
-                            All
-                        </a>
-                    </li>
-                    <li>
-                        <a href="/payment-transfers/pending.html">
-                            Pending
-                        </a>
-                    </li>
-                    <li>
-                        <a href="" class="active">
-                            Paid
-                        </a>
-                    </li>
-                </ul>
-            </div>
             <div class="content-container">
-                <div class="row">
-                    <div class="table-container col-xs-12 dropshadow">
-                        <table class="table table-hover">
-                            <thead>
-                                <tr>
-                                    <th>STATE</th>
-                                    <th>COMPANY</th>
-                                    <th>AMOUNT</th>
-                                    <th>CREATED</th>
-                                    <td class="table-head-link">
-                                        <a href="new">Download Report</a>
-                                    </td>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>Pending</td>
-                                    <td>Huddle Campus</td>
-                                    <td>$100.00 USD</td>
-                                    <td>2014-06-01 00:02:58 UTC</td>
-                                    <td class="table-body-link">
-                                        <a href="#">Details</a>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
+                <form action="">
+                    <fieldset>
+                        <div class="row">
+                        <div class="form-group input-container col-xs-12">
+                            <label for="redirect-target">OPEN IN NEW WINDOW?</label>
+                            <input type="checkbox" class="preferences-checkbox" id="redirect-target">
+                        </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group input-container col-xs-6 dropshadow">
+                                <label class="field-label" for="redirect-path">PATH</label>
+                                <input type="text" id="redirect-path" class="form-control field-input" placeholder="Enter the page title">
+                            </div>
+                            <div class="form-group input-container col-xs-6 dropshadow">
+                                <label class="field-label" for="redirect-url">REDIRECT URL</label>
+                                <input type="text" id="redirect-url" class="form-control field-input" placeholder="Enter the redirect url">
+                            </div>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+            <div class="btn-wrapper">
+                <button class="btn header-btn btn-grey">CANCEL</button>
+                <button class="btn header-btn btn-green">SAVE</button>
             </div>
         </div>
     </main><!-- Main Content -->
