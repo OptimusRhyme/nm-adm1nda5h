@@ -15,11 +15,7 @@
 <body>
     <header>
         <div class="main-header">
-            <div class="breadcrumbs">Visuals</div>
-            <div class="header-nav-wrapper">
-                <button class="btn header-btn btn-grey">CANCEL</button>
-                <button class="btn header-btn btn-green">SAVE</button>
-            </div>
+            <div class="breadcrumbs">Listings</div>
         </div>
     </header><!-- Brand and Breadcrumbs-->
     <nav>
@@ -59,7 +55,7 @@
                     </ul><!-- Pages Sub Nav -->
                 </li><!-- Pages -->
                 <li id="theme">
-                    <a href="/theme/colors.html" class="active">
+                    <a href="/theme/colors.html">
                         <i class='fa fa-picture-o'></i>
                         <span>Theme</span>
                     </a>
@@ -75,14 +71,14 @@
                         <i class='fa fa-bank'></i>
                         <span>My Marketplace</span>
                     </a>
-                    <ul id="my-marketplace-sub" class="sub-nav collapse">
+                    <ul id="my-marketplace-sub" class="sub-nav collapse in">
                         <li>
                             <a href="/my-marketplace/locations/types.html">
                                 <span>Locations</span>
                             </a>
                         </li><!-- Locations -->
                         <li>
-                            <a href="/my-marketplace/listings/types.html">
+                            <a href="/my-marketplace/listings/types.html" class="active">
                                 <span>Listings</span>
                             </a>
                         </li><!-- Listings -->
@@ -198,68 +194,60 @@
             <div class="sub-header-nav">
                 <ul>
                     <li>
-                        <a href="/theme/colors.html">
-                            Colors
+                        <a href="#" class="active">
+                           Types
                         </a>
                     </li>
                     <li>
-                        <a href="/theme/fonts.html">
-                            Fonts
-                        </a>
-                    </li>
-                    <li>
-                        <a href="" class="active">
-                            Visuals
+                        <a href="/my-marketplace/listings/amenities.html">
+                            Amenities
                         </a>
                     </li>
                 </ul>
             </div>
             <div class="content-container">
-                <form action="">
-                    <fieldset>
-                        <div class="row">
-                            <div class="form-group input-container col-xs-4">
-                                <p class="field-label">HERO</p>
-                                <label for="hero" class="field-upload">
-                                    <input type="file" id="hero" name="hero" class="upload-file">Upload image
-                                </label>
-                            </div>
-                            <div class="form-group input-container col-xs-4">
-                                <p class="field-label">LOGO</p>
-                                <label for="logo" class="field-upload">
-                                    <input type="file" id="logo" name="logo" class="upload-file">Upload image
-                                </label>
-                            </div>
-                            <div class="form-group input-container col-xs-4">
-                                <p class="field-label">ICON</p>
-                                <label for="icon" class="field-upload">
-                                    <input type="file" id="icon" name="icon" class="upload-file">Upload image
-                                </label>
-                            </div>
-                        </div>
-                        <div class="row dropshadow">
-                            <div class="form-group input-container col-xs-4">
-                                <p class="field-label">FAVICON</p>
-                                <label for="favicon" class="field-upload">
-                                    <input type="file" id="favicon" name="favicon" class="upload-file">Upload image
-                                </label>
-                            </div>
-                            <div class="form-group input-container col-xs-4">
-                                <p class="field-label">RETINA LOGO</p>
-                                <label for="logo-retina" class="field-upload">
-                                    <input type="file" id="logo-retina" name="logo" class="upload-file">Upload image
-                                </label>
-                            </div>
-                            <div class="form-group input-container col-xs-4">
-                                <p class="field-label">RETINA ICON</p>
-                                <label for="icon-retina" class="field-upload">
-                                    <input type="file" id="icon-retina" name="hero" class="upload-file">Upload image
-                                </label>
-                            </div>
-                        </div>
-                    </fieldset>
-                </form>
-            </div>
+                <div class="row">
+                    <div class="table-container col-xs-12 dropshadow">
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>LISTING TYPES</th>
+                                    <th></th>
+                                    <td class="table-head-link">
+                                        <a href="new.html">+ Add New Listing Type</a>
+                                    </td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Desk</td>
+                                    <td></td>
+                                    <td class="table-body-link">
+                                        <a href="#">Edit</a>
+                                        <a href="#">Delete</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Private Office</td>
+                                    <td></td>
+                                    <td class="table-body-link">
+                                        <a href="#">Edit</a>
+                                        <a href="#">Delete</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Conference Room</td>
+                                    <td></td>
+                                    <td class="table-body-link">
+                                        <a href="#">Edit</a>
+                                        <a href="#">Delete</a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div> <!--Content Container -->
         </div>
     </main><!-- Main Content -->
     <aside>

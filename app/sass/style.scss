@@ -236,6 +236,14 @@ html body {
 		text-decoration: none;
 		border-bottom: solid $color-brand 2px;
 	}
+
+	.sub-nav-btn {
+		float: right;
+
+		a {
+			color: $color-brand;
+		}
+	}
 }
 
 .preferences {
@@ -257,7 +265,7 @@ html body {
 
 #main-container .content-container{
 	border-right: solid #eeeeee 2px;
-	margin-bottom: 20px;
+	margin-bottom: 10px;
 	width: 100%;
 
 	.row {
@@ -271,6 +279,43 @@ html body {
 		padding: 15px 25px;
 		font-family: $font-body-regular;
 		float: left;
+	}
+
+	.line-item-container {
+		background: #fff;
+		border-top: solid #eee 1px;
+		border-bottom: solid #eee 1px;
+		padding: 10px 15px;
+		font-family: $font-body-regular;
+
+		label {
+			margin: 0;
+		}
+	}
+
+	.line-item-btn {
+		float: right;
+		color: $color-brand;
+		visibility: hidden;
+	}
+
+	.line-item-category {
+		border-left: solid #46B272 4px;
+	}
+
+	.line-item-category:hover {
+		background: #ebf6fc;
+		cursor: pointer;
+	}
+
+	.line-item-category:hover .line-item-btn {
+		visibility: visible;
+	}
+
+	.line-item-child {
+		border-left: solid #d5d5d5 4px;
+		float: right;
+		width: 97%;
 	}
 
 	.table-container {
@@ -288,7 +333,7 @@ html body {
 }
 
 /*===== FORM FIELDS =====*/
-.input-container {
+.input-container, .line-item-container {
 
 	.form-control {
 		border: none;

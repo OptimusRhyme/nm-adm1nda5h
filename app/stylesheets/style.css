@@ -246,6 +246,12 @@ html body {
   text-decoration: none;
   border-bottom: solid #1a7fbb 2px;
 }
+.sub-header-nav .sub-nav-btn {
+  float: right;
+}
+.sub-header-nav .sub-nav-btn a {
+  color: #1a7fbb;
+}
 
 .preferences label {
   float: left !important;
@@ -262,7 +268,7 @@ html body {
 /*===== FORMS =====*/
 #main-container .content-container {
   border-right: solid #eeeeee 2px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   width: 100%;
 }
 #main-container .content-container .row {
@@ -275,6 +281,36 @@ html body {
   padding: 15px 25px;
   font-family: "Avenir Regular", Helvetica, Arial, sans-serif;
   float: left;
+}
+#main-container .content-container .line-item-container {
+  background: #fff;
+  border-top: solid #eee 1px;
+  border-bottom: solid #eee 1px;
+  padding: 10px 15px;
+  font-family: "Avenir Regular", Helvetica, Arial, sans-serif;
+}
+#main-container .content-container .line-item-container label {
+  margin: 0;
+}
+#main-container .content-container .line-item-btn {
+  float: right;
+  color: #1a7fbb;
+  visibility: hidden;
+}
+#main-container .content-container .line-item-category {
+  border-left: solid #46B272 4px;
+}
+#main-container .content-container .line-item-category:hover {
+  background: #ebf6fc;
+  cursor: pointer;
+}
+#main-container .content-container .line-item-category:hover .line-item-btn {
+  visibility: visible;
+}
+#main-container .content-container .line-item-child {
+  border-left: solid #d5d5d5 4px;
+  float: right;
+  width: 97%;
 }
 #main-container .content-container .table-container {
   min-width: 475px;
@@ -290,24 +326,24 @@ html body {
 }
 
 /*===== FORM FIELDS =====*/
-.input-container .form-control {
+.input-container .form-control, .line-item-container .form-control {
   border: none;
   box-shadow: none;
   padding-left: 0;
   z-index: 0;
 }
-.input-container .form-control:focus {
+.input-container .form-control:focus, .line-item-container .form-control:focus {
   box-shadow: none;
 }
-.input-container .form-control::-moz-placeholder {
+.input-container .form-control::-moz-placeholder, .line-item-container .form-control::-moz-placeholder {
   color: #CACACA;
   font-style: italic;
 }
-.input-container .form-control:-ms-input-placeholder {
+.input-container .form-control:-ms-input-placeholder, .line-item-container .form-control:-ms-input-placeholder {
   color: #CACACA;
   font-style: italic;
 }
-.input-container .form-control::-webkit-input-placeholder {
+.input-container .form-control::-webkit-input-placeholder, .line-item-container .form-control::-webkit-input-placeholder {
   color: #CACACA;
   font-style: italic;
 }

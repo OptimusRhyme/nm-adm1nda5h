@@ -15,11 +15,7 @@
 <body>
     <header>
         <div class="main-header">
-            <div class="breadcrumbs">Visuals</div>
-            <div class="header-nav-wrapper">
-                <button class="btn header-btn btn-grey">CANCEL</button>
-                <button class="btn header-btn btn-green">SAVE</button>
-            </div>
+            <div class="breadcrumbs">Locations</div>
         </div>
     </header><!-- Brand and Breadcrumbs-->
     <nav>
@@ -59,7 +55,7 @@
                     </ul><!-- Pages Sub Nav -->
                 </li><!-- Pages -->
                 <li id="theme">
-                    <a href="/theme/colors.html" class="active">
+                    <a href="/theme/colors.html">
                         <i class='fa fa-picture-o'></i>
                         <span>Theme</span>
                     </a>
@@ -75,9 +71,9 @@
                         <i class='fa fa-bank'></i>
                         <span>My Marketplace</span>
                     </a>
-                    <ul id="my-marketplace-sub" class="sub-nav collapse">
+                    <ul id="my-marketplace-sub" class="sub-nav collapse in">
                         <li>
-                            <a href="/my-marketplace/locations/types.html">
+                            <a href="/my-marketplace/locations/types.html" class="active">
                                 <span>Locations</span>
                             </a>
                         </li><!-- Locations -->
@@ -198,67 +194,74 @@
             <div class="sub-header-nav">
                 <ul>
                     <li>
-                        <a href="/theme/colors.html">
-                            Colors
+                        <a href="/my-marketplace/locations/types.html">
+                            Types
                         </a>
                     </li>
                     <li>
-                        <a href="/theme/fonts.html">
-                            Fonts
+                        <a href="/my-marketplace/locations/amenities.html" class="active">
+                            Amenities
                         </a>
                     </li>
-                    <li>
-                        <a href="" class="active">
-                            Visuals
+                    <li class="sub-nav-btn">
+                        <a href="#">
+                            + New Category
                         </a>
                     </li>
                 </ul>
             </div>
-            <div class="content-container">
-                <form action="">
-                    <fieldset>
-                        <div class="row">
-                            <div class="form-group input-container col-xs-4">
-                                <p class="field-label">HERO</p>
-                                <label for="hero" class="field-upload">
-                                    <input type="file" id="hero" name="hero" class="upload-file">Upload image
-                                </label>
-                            </div>
-                            <div class="form-group input-container col-xs-4">
-                                <p class="field-label">LOGO</p>
-                                <label for="logo" class="field-upload">
-                                    <input type="file" id="logo" name="logo" class="upload-file">Upload image
-                                </label>
-                            </div>
-                            <div class="form-group input-container col-xs-4">
-                                <p class="field-label">ICON</p>
-                                <label for="icon" class="field-upload">
-                                    <input type="file" id="icon" name="icon" class="upload-file">Upload image
-                                </label>
-                            </div>
-                        </div>
-                        <div class="row dropshadow">
-                            <div class="form-group input-container col-xs-4">
-                                <p class="field-label">FAVICON</p>
-                                <label for="favicon" class="field-upload">
-                                    <input type="file" id="favicon" name="favicon" class="upload-file">Upload image
-                                </label>
-                            </div>
-                            <div class="form-group input-container col-xs-4">
-                                <p class="field-label">RETINA LOGO</p>
-                                <label for="logo-retina" class="field-upload">
-                                    <input type="file" id="logo-retina" name="logo" class="upload-file">Upload image
-                                </label>
-                            </div>
-                            <div class="form-group input-container col-xs-4">
-                                <p class="field-label">RETINA ICON</p>
-                                <label for="icon-retina" class="field-upload">
-                                    <input type="file" id="icon-retina" name="hero" class="upload-file">Upload image
-                                </label>
-                            </div>
-                        </div>
-                    </fieldset>
-                </form>
+            <div class="content-container line-item">
+                <div class="row">
+                    <div class="line-item-container" style="border-left: solid #46B272 4px;">
+                        <input type="text" id="new-amenitiy-category" class="form-control field-input" placeholder="Enter new category name here">
+                    </div>
+                </div>
+            </div>
+            <div class="content-container line-item">
+                <div class="row">
+                    <div class="line-item-container line-item-category">
+                        <label for="">PARKING</label>
+                        <span>
+                            <a href="#" class="line-item-btn" tabindex="0" data-toggle="popover" data-trigger="focus" title="Dismissible popover" data-content="And here's some amazing content. It's very engaging. Right?">+</a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="content-container line-item">
+                <div class="row">
+                    <div class="line-item-container line-item-child">
+                        <label for="">Attendant on duty</label>
+                    </div>
+                </div>
+            </div>
+            <div class="content-container line-item">
+                <div class="row">
+                    <div class="line-item-container line-item-child">
+                        <label for="">Plenty of parking space</label>
+                    </div>
+                </div>
+            </div>
+            <div class="content-container line-item">
+                <div class="row">
+                    <div class="line-item-container line-item-category">
+                        <label for="">ENTERTAINMENT</label>
+                        <span class="line-item-btn">+</span>
+                    </div>
+                </div>
+            </div>
+            <div class="content-container line-item">
+                <div class="row">
+                    <div class="line-item-container line-item-child">
+                        <label for="">Happy Hour</label>
+                    </div>
+                </div>
+            </div>
+            <div class="content-container line-item">
+                <div class="row">
+                    <div class="line-item-container line-item-child">
+                        <label for="">Sockem Boppers</label>
+                    </div>
+                </div>
             </div>
         </div>
     </main><!-- Main Content -->
