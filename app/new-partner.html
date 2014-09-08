@@ -19,7 +19,9 @@
         <div class="main-header">
             <div class="breadcrumbs">New Partner</div>
             <div class="header-nav-wrapper">
-                <button class="btn header-btn btn-grey">CANCEL</button>
+                <a href="/manage-partners.html">
+                    <button class="btn header-btn btn-grey">CANCEL</button>
+                </a>
                 <button class="btn header-btn btn-green">SAVE</button>
             </div>
         </div>
@@ -58,11 +60,6 @@
                                 <span>All Pages</span>
                             </a><!-- All Pages -->
                         </li>
-                        <li>
-                            <a href="/pages/redirect.html">
-                                <span>Redirects</span>
-                            </a><!-- All Pages -->
-                        </li>
                     </ul><!-- Pages Sub Nav -->
                 </li><!-- Pages -->
                 <li id="theme">
@@ -72,10 +69,27 @@
                     </a>
                 </li><!-- Theme -->
                 <li id="services">
-                    <a href="/services/attributes.html">
+                    <a href="#services-sub" data-toggle="collapse" data-parent="#services-sub">
                         <i class='fa fa-cubes'></i>
                         <span>Services</span>
                     </a>
+                    <ul id="services-sub" class="sub-nav collapse">
+                        <li>
+                            <a href="/services/attributes.html">
+                                <span>Attributes</span>
+                            </a>
+                        </li><!-- Attributes-->
+                        <li>
+                            <a href="/services/locations/types.html">
+                                <span>Locations</span>
+                            </a>
+                        </li><!-- Locations -->
+                        <li>
+                            <a href="/services/listings/types.html">
+                                <span>Listings</span>
+                            </a>
+                        </li><!-- Listings -->
+                    </ul>
                 </li><!-- Services -->
                 <li id="my-marketplace">
                     <a href="#my-marketplace-sub" data-toggle="collapse" data-parent="#my-marketplace">
@@ -83,16 +97,6 @@
                         <span>My Marketplace</span>
                     </a>
                     <ul id="my-marketplace-sub" class="sub-nav collapse">
-                        <li>
-                            <a href="/my-marketplace/locations/types.html">
-                                <span>Locations</span>
-                            </a>
-                        </li><!-- Locations -->
-                        <li>
-                            <a href="/my-marketplace/listings/types.html">
-                                <span>Listings</span>
-                            </a>
-                        </li><!-- Listings -->
                         <li>
                             <a href="/my-marketplace/permissions/admins.html">
                                 <span>Permissions</span>
@@ -119,7 +123,7 @@
                             </a>
                         </li>
                     </ul><!-- My Marketplace Sub Nav -->
-                </li><!-- My Marketplace -->
+                </li>
                 <li id="mailers">
                     <a href="/mailers.html">
                         <i class='fa fa-envelope'></i>
@@ -203,7 +207,7 @@
     <main>
         <div class="container-fluid partners" id="main-container">
             <h4>Partner Basic Info</h4>
-            <div class="content-container">
+            <div class="content-container partner-content">
                 <form action="">
                     <fieldset>
                         <div class="row">
@@ -230,7 +234,7 @@
                 </form>
             </div>
             <h4>Title and Description</h4>
-            <div class="content-container">
+            <div class="content-container partner-content">
                 <form action="">
                     <fieldset>
                         <div class="row">
@@ -263,54 +267,60 @@
                 </form>
             </div>
             <h4>Brand</h4>
-            <div class="content-container">
+            <div class="content-container visuals">
                 <form action="">
                     <fieldset>
                         <div class="row">
                             <div class="form-group input-container col-xs-4">
                                 <p class="field-label">HERO</p>
-                                <label for="partner-hero" class="field-upload">
-                                    <input type="file" id="partner-hero" name="partner-hero" class="upload-file">Upload image
+                                <label for="hero" class="field-upload">
+                                    <input type="file" id="hero" name="file-hero" class="upload-file" name="1">Upload image
                                 </label>
+                                <p class="file-name" id="file-hero"></p>
                             </div>
                             <div class="form-group input-container col-xs-4">
                                 <p class="field-label">LOGO</p>
-                                <label for="partner-logo" class="field-upload">
-                                    <input type="file" id="partner-logo" name="partner-logo" class="upload-file">Upload image
+                                <label for="logo" class="field-upload">
+                                    <input type="file" id="logo" name="file-logo" class="upload-file">Upload image
                                 </label>
+                                <p class="file-name" id="file-logo"></p>
                             </div>
                             <div class="form-group input-container col-xs-4">
                                 <p class="field-label">ICON</p>
-                                <label for="partner-icon" class="field-upload">
-                                    <input type="file" id="partner-icon" name="partner-icon" class="upload-file">Upload image
+                                <label for="icon" class="field-upload">
+                                    <input type="file" id="icon" name="file-icon" class="upload-file">Upload image
                                 </label>
+                                <p class="file-name" id="file-icon"></p>
                             </div>
                         </div>
                         <div class="row dropshadow">
                             <div class="form-group input-container col-xs-4">
                                 <p class="field-label">FAVICON</p>
-                                <label for="partner-favicon" class="field-upload">
-                                    <input type="file" id="partner-favicon" name="partner-favicon" class="upload-file">Upload image
+                                <label for="favicon" class="field-upload">
+                                    <input type="file" id="favicon" name="file-favicon" class="upload-file">Upload image
                                 </label>
+                                <p class="file-name" id="file-favicon"></p>
                             </div>
                             <div class="form-group input-container col-xs-4">
                                 <p class="field-label">RETINA LOGO</p>
-                                <label for="partner-logo-retina" class="field-upload">
-                                    <input type="file" id="partner-logo-retina" name="partner-logo" class="upload-file">Upload image
+                                <label for="logo-retina" class="field-upload">
+                                    <input type="file" id="logo-retina" name="file-logo-retina" class="upload-file">Upload image
                                 </label>
+                                <p class="file-name" id="file-logo-retina"></p>
                             </div>
                             <div class="form-group input-container col-xs-4">
                                 <p class="field-label">RETINA ICON</p>
-                                <label for="partner-icon-retina" class="field-upload">
-                                    <input type="file" id="partner-icon-retina" name="partner-icon-retina" class="upload-file">Upload image
+                                <label for="icon-retina" class="field-upload">
+                                    <input type="file" id="icon-retina" name="file-icon-retina" class="upload-file">Upload image
                                 </label>
+                                <p class="file-name" id="file-icon-retina"></p>
                             </div>
                         </div>
                     </fieldset>
                 </form>
             </div>
             <h4>Contact and Support</h4>
-            <div class="content-container">
+            <div class="content-container partner-content">
                 <form action="">
                     <fieldset>
                         <div class="row">
@@ -343,7 +353,7 @@
                 </form>
             </div>
             <h4>Social Properties</h4>
-            <div class="content-container">
+            <div class="content-container partner-content">
                 <form action="">
                     <fieldset>
                          <div class="row">
@@ -370,7 +380,7 @@
                 </form>
             </div>
             <h4>Colors</h4>
-            <div class="content-container">
+            <div class="content-container partner-content">
                 <form action="">
                     <fieldset>
                         <div class="row">
@@ -409,7 +419,7 @@
                 </form>
             </div>
             <h4>Homepage</h4>
-            <div class="content-container">
+            <div class="content-container partner-content">
                 <form action="">
                     <fieldset>
                         <div class="row">

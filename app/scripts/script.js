@@ -27,10 +27,30 @@ $("#toggle-help").click(function() {
 	}
 });
 
-//Fonts
-$('.upload-font').change(function() {
+
+
+//Bootstrap Popovers
+$(function () {
+	$(".line-item-btn").popover();
+});
+
+
+
+//Reveal input when user clicks 'add new'
+$('.add-new-hidden').hide();
+
+$('.add-new-btn').click(function() {
+	$('.add-new-hidden').slideDown();
+});
+
+
+
+//Display file name on upload
+$('.upload-file').change(function() {
 	$('#' + $(this).attr('name')).append($(this).val().split('\\').pop());
 });
+
+
 
 //Prefences Checkbox slide
 $(".cancellation-settings").hide();
@@ -53,6 +73,8 @@ $("#password-check").change(function() {
 		$(".password-settings").slideUp();
 	}
 })
+
+
 
 //Charts
 var randomScalingFactor = function(){ return Math.round(Math.random()*100)};
@@ -87,6 +109,8 @@ var randomScalingFactor = function(){ return Math.round(Math.random()*100)};
 			responsive: true
 		});
 	}
+
+
 
 //ColorPicker
 $('.color-picker').click(function() {

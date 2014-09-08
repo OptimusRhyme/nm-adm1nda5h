@@ -18,7 +18,9 @@
         <div class="main-header">
             <div class="breadcrumbs">Fonts</div>
             <div class="header-nav-wrapper">
-                <button class="btn header-btn btn-grey">CANCEL</button>
+                <a href="/theme/fonts.html">
+                    <button class="btn header-btn btn-grey">CANCEL</button>
+                </a>
                 <button class="btn header-btn btn-green">SAVE</button>
             </div>
         </div>
@@ -57,11 +59,6 @@
                                 <span>All Pages</span>
                             </a><!-- All Pages -->
                         </li>
-                        <li>
-                            <a href="/pages/redirect.html">
-                                <span>Redirects</span>
-                            </a><!-- All Pages -->
-                        </li>
                     </ul><!-- Pages Sub Nav -->
                 </li><!-- Pages -->
                 <li id="theme">
@@ -71,10 +68,27 @@
                     </a>
                 </li><!-- Theme -->
                 <li id="services">
-                    <a href="/services/attributes.html">
+                    <a href="#services-sub" data-toggle="collapse" data-parent="#services-sub">
                         <i class='fa fa-cubes'></i>
                         <span>Services</span>
                     </a>
+                    <ul id="services-sub" class="sub-nav collapse">
+                        <li>
+                            <a href="/services/attributes.html">
+                                <span>Attributes</span>
+                            </a>
+                        </li><!-- Attributes-->
+                        <li>
+                            <a href="/services/locations/types.html">
+                                <span>Locations</span>
+                            </a>
+                        </li><!-- Locations -->
+                        <li>
+                            <a href="/services/listings/types.html">
+                                <span>Listings</span>
+                            </a>
+                        </li><!-- Listings -->
+                    </ul>
                 </li><!-- Services -->
                 <li id="my-marketplace">
                     <a href="#my-marketplace-sub" data-toggle="collapse" data-parent="#my-marketplace">
@@ -82,16 +96,6 @@
                         <span>My Marketplace</span>
                     </a>
                     <ul id="my-marketplace-sub" class="sub-nav collapse">
-                        <li>
-                            <a href="/my-marketplace/locations/types.html">
-                                <span>Locations</span>
-                            </a>
-                        </li><!-- Locations -->
-                        <li>
-                            <a href="/my-marketplace/listings/types.html">
-                                <span>Listings</span>
-                            </a>
-                        </li><!-- Listings -->
                         <li>
                             <a href="/my-marketplace/permissions/admins.html">
                                 <span>Permissions</span>
@@ -118,6 +122,7 @@
                             </a>
                         </li>
                     </ul><!-- My Marketplace Sub Nav -->
+                </li>
                 </li><!-- My Marketplace -->
                 <li id="mailers">
                     <a href="/mailers.html">
@@ -231,7 +236,7 @@
                                     <td class="table-body-link">
                                         <label for="regular-eot">
                                             Upload file
-                                            <input id="regular-eot" type="file" name="1" class="upload-font">
+                                            <input id="regular-eot" type="file" name="1" class="upload-file">
                                         </label>
                                     </td>
                                 </tr>
@@ -241,7 +246,7 @@
                                     <td class="table-body-link">
                                         <label for="regular-ttf">
                                             Upload file
-                                            <input id="regular-ttf" type="file" name="2" class="upload-font">
+                                            <input id="regular-ttf" type="file" name="2" class="upload-file">
                                         </label>
                                     </td>
                                 </tr>
@@ -251,7 +256,7 @@
                                     <td class="table-body-link">
                                         <label for="regular-svg">
                                             Upload file
-                                            <input id="regular-svg" type="file" name="3" class="upload-font">
+                                            <input id="regular-svg" type="file" name="3" class="upload-file">
                                         </label>
                                     </td>
                                 </tr>
@@ -261,7 +266,7 @@
                                     <td class="table-body-link">
                                         <label for="regular-woff">
                                             Upload file
-                                            <input id="regular-woff" type="file" name="4" class="upload-font">
+                                            <input id="regular-woff" type="file" name="4" class="upload-file">
                                         </label>
                                     </td>
                                 </tr>
@@ -271,7 +276,7 @@
                                     <td class="table-body-link">
                                         <label for="medium-eot">
                                             Upload file
-                                            <input id="medium-eot" type="file" name="5" class="upload-font">
+                                            <input id="medium-eot" type="file" name="5" class="upload-file">
                                         </label>
                                     </td>
                                 </tr>
@@ -281,7 +286,7 @@
                                     <td class="table-body-link">
                                         <label for="medium-ttf">
                                             Upload file
-                                            <input id="medium-ttf" type="file" name="6" class="upload-font">
+                                            <input id="medium-ttf" type="file" name="6" class="upload-file">
                                         </label>
                                     </td>
                                 </tr>
@@ -291,7 +296,7 @@
                                     <td class="table-body-link">
                                         <label for="medium-svg">
                                             Upload file
-                                            <input id="medium-svg" type="file" name="7" class="upload-font">
+                                            <input id="medium-svg" type="file" name="7" class="upload-file">
                                         </label>
                                     </td>
                                 </tr>
@@ -301,7 +306,7 @@
                                     <td class="table-body-link">
                                         <label for="medium-woff">
                                             Upload file
-                                            <input id="medium-woff" type="file" name="8" class="upload-font">
+                                            <input id="medium-woff" type="file" name="8" class="upload-file">
                                         </label>
                                     </td>
                                 </tr>
@@ -311,7 +316,7 @@
                                     <td class="table-body-link">
                                         <label for="bold-eot">
                                             Upload file
-                                            <input id="bold-eot" type="file" name="9" class="upload-font">
+                                            <input id="bold-eot" type="file" name="9" class="upload-file">
                                         </label>
                                     </td>
                                 </tr>
@@ -321,7 +326,7 @@
                                     <td class="table-body-link">
                                         <label for="bold-ttf">
                                             Upload file
-                                            <input id="bold-ttf" type="file" name="10" class="upload-font">
+                                            <input id="bold-ttf" type="file" name="10" class="upload-file">
                                         </label>
                                     </td>
                                 </tr>
@@ -331,7 +336,7 @@
                                     <td class="table-body-link">
                                         <label for="bold-svg">
                                             Upload file
-                                            <input id="bold-svg" type="file" name="11" class="upload-font">
+                                            <input id="bold-svg" type="file" name="11" class="upload-file">
                                         </label>
                                     </td>
                                 </tr>
@@ -341,7 +346,7 @@
                                     <td class="table-body-link">
                                         <label for="bold-woff">
                                             Upload file
-                                            <input id="bold-woff" type="file" name="12" class="upload-font">
+                                            <input id="bold-woff" type="file" name="12" class="upload-file">
                                         </label>
                                     </td>
                                 </tr>

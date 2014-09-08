@@ -1,9 +1,27 @@
 /*===== FONTS =====*/
 @font-face {
-  font-family: 'Brandon';
-  src: url("../fonts/brandon_bld-webfont.eot");
+  font-family: 'Brandon Bold';
+  src: url("../fonts/Brandon_bld.eot");
   /* IE9 Compat Modes */
-  src: url("../fonts/brandon_bld-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/brandon_bld-webfont.woff") format("woff"), url("../fonts/brandon_bld-webfont.ttf") format("truetype"), url("../fonts/brandon_bld-webfont.svg#e2b4a901dc21adc8c4deecbedb302532") format("svg");
+  src: url("../fonts/Brandon_bld.eot?#iefix") format("embedded-opentype"), url("../fonts/Brandon_bld.woff") format("woff"), url("../fonts/Brandon_bld.ttf") format("truetype"), url("../fonts/Brandon_bld.svg#41e76bd6e414417d52adb646f262964a") format("svg");
+  /* Legacy iOS */
+  font-style: normal;
+  font-weight: 700;
+}
+@font-face {
+  font-family: 'Brandon Light';
+  src: url("../fonts/Brandon_light.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/Brandon_light.eot?#iefix") format("embedded-opentype"), url("../fonts/Brandon_light.woff") format("woff"), url("../fonts/Brandon_light.ttf") format("truetype"), url("../fonts/Brandon_light.svg#354fd4633228a7e3ae69c73de8c58871") format("svg");
+  /* Legacy iOS */
+  font-style: normal;
+  font-weight: 200;
+}
+@font-face {
+  font-family: 'Brandon Medium';
+  src: url("../fonts/Brandon_med.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/Brandon_med.eot?#iefix") format("embedded-opentype"), url("../fonts/Brandon_med.woff") format("woff"), url("../fonts/Brandon_med.ttf") format("truetype"), url("../fonts/Brandon_med.svg#42e0c7c233eb5259e2b1a7ec7e16d4ce") format("svg");
   /* Legacy iOS */
   font-style: normal;
   font-weight: 400;
@@ -50,6 +68,10 @@ html body {
   color: #e83d33;
 }
 
+a:hover {
+  text-decoration: none;
+}
+
 .partners h4 {
   font-family: "Avenir Regular", Helvetica, Arial, sans-serif;
 }
@@ -68,7 +90,7 @@ html body {
 .breadcrumbs {
   float: left;
   font-size: 22px;
-  font-family: "Avenir Light", Helvetica, Arial, sans-serif;
+  font-family: "Brandon Light", Helvetica, Arial, sans-serif;
   letter-spacing: 1.8;
 }
 
@@ -84,7 +106,7 @@ html body {
 
 .header-btn {
   color: #fff;
-  font-family: "Brandon", Helvetica, Arial, sans-serif;
+  font-family: "Brandon Medium", Helvetica, Arial, sans-serif;
   font-size: 13px;
   font-weight: 100;
   margin-left: 15px;
@@ -270,6 +292,29 @@ html body {
   border-bottom: solid #eee 2px;
 }
 
+#main-container .content-container.partner-content {
+  margin-bottom: 37px;
+}
+
+.popover {
+  border-radius: 0;
+  width: 125px;
+}
+
+.popover-content ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.popover i {
+  margin-right: 10px;
+  color: #1a7fbb;
+}
+
+.file-name {
+  height: 15px;
+}
+
 /*===== FORMS =====*/
 #main-container .content-container {
   border-right: solid #eeeeee 2px;
@@ -363,8 +408,8 @@ html body {
   text-align: center;
 }
 
-.field-upload .upload-file {
-  display: none;
+.upload-file {
+  display: none !important;
 }
 
 .field-upload:hover {
@@ -433,8 +478,8 @@ html body {
 }
 
 .color-thumbnail {
-  height: 50px;
-  width: 50px;
+  height: 30px;
+  width: 30px;
   display: inline-block;
 }
 
@@ -442,8 +487,8 @@ html body {
   display: inline-block;
   width: 80%;
   position: relative;
-  bottom: 20px;
-  margin: 20px 0 0 0;
+  bottom: 10px;
+  margin: 20px 0 0 12px;
 }
 
 .color-thumbnail.header {
@@ -466,10 +511,6 @@ html body {
   float: right;
 }
 
-.upload-font {
-  display: none !important;
-}
-
 /*===== TABLES =====*/
 .table {
   font-size: 14px;
@@ -487,6 +528,9 @@ html body {
 }
 .table .table-head-link, .table .table-body-link {
   text-align: right;
+}
+.table .table-head-link a {
+  margin-left: 20px;
 }
 .table .table-body-link > a, .table .table-body-link > label {
   visibility: hidden;

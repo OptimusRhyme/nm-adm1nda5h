@@ -57,11 +57,6 @@
                                 <span>All Pages</span>
                             </a><!-- All Pages -->
                         </li>
-                        <li>
-                            <a href="/pages/redirect.html">
-                                <span>Redirects</span>
-                            </a><!-- All Pages -->
-                        </li>
                     </ul><!-- Pages Sub Nav -->
                 </li><!-- Pages -->
                 <li id="theme">
@@ -71,10 +66,27 @@
                     </a>
                 </li><!-- Theme -->
                 <li id="services">
-                    <a href="/services/attributes.html">
+                    <a href="#services-sub" data-toggle="collapse" data-parent="#services-sub">
                         <i class='fa fa-cubes'></i>
                         <span>Services</span>
                     </a>
+                    <ul id="services-sub" class="sub-nav collapse">
+                        <li>
+                            <a href="/services/attributes.html">
+                                <span>Attributes</span>
+                            </a>
+                        </li><!-- Attributes-->
+                        <li>
+                            <a href="/services/locations/types.html">
+                                <span>Locations</span>
+                            </a>
+                        </li><!-- Locations -->
+                        <li>
+                            <a href="/services/listings/types.html">
+                                <span>Listings</span>
+                            </a>
+                        </li><!-- Listings -->
+                    </ul>
                 </li><!-- Services -->
                 <li id="my-marketplace">
                     <a href="#my-marketplace-sub" data-toggle="collapse" data-parent="#my-marketplace">
@@ -82,16 +94,6 @@
                         <span>My Marketplace</span>
                     </a>
                     <ul id="my-marketplace-sub" class="sub-nav collapse">
-                        <li>
-                            <a href="/my-marketplace/locations/types.html">
-                                <span>Locations</span>
-                            </a>
-                        </li><!-- Locations -->
-                        <li>
-                            <a href="/my-marketplace/listings/types.html">
-                                <span>Listings</span>
-                            </a>
-                        </li><!-- Listings -->
                         <li>
                             <a href="/my-marketplace/permissions/admins.html">
                                 <span>Permissions</span>
@@ -118,7 +120,7 @@
                             </a>
                         </li>
                     </ul><!-- My Marketplace Sub Nav -->
-                </li><!-- My Marketplace -->
+                </li>
                 <li id="mailers">
                     <a href="/mailers.html">
                         <i class='fa fa-envelope'></i>

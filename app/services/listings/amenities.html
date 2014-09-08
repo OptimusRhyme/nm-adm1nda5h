@@ -52,11 +52,6 @@
                                 <span>All Pages</span>
                             </a><!-- All Pages -->
                         </li>
-                        <li>
-                            <a href="/pages/redirect.html">
-                                <span>Redirects</span>
-                            </a><!-- All Pages -->
-                        </li>
                     </ul><!-- Pages Sub Nav -->
                 </li><!-- Pages -->
                 <li id="theme">
@@ -66,27 +61,34 @@
                     </a>
                 </li><!-- Theme -->
                 <li id="services">
-                    <a href="/services/attributes.html">
+                    <a href="#services-sub" data-toggle="collapse" data-parent="#services-sub">
                         <i class='fa fa-cubes'></i>
                         <span>Services</span>
                     </a>
+                    <ul id="services-sub" class="sub-nav collapse in">
+                        <li>
+                            <a href="/services/attributes.html">
+                                <span>Attributes</span>
+                            </a>
+                        </li><!-- Attributes-->
+                        <li>
+                            <a href="/services/locations/types.html">
+                                <span>Locations</span>
+                            </a>
+                        </li><!-- Locations -->
+                        <li>
+                            <a href="/services/listings/types.html" class="active">
+                                <span>Listings</span>
+                            </a>
+                        </li><!-- Listings -->
+                    </ul>
                 </li><!-- Services -->
                 <li id="my-marketplace">
                     <a href="#my-marketplace-sub" data-toggle="collapse" data-parent="#my-marketplace">
                         <i class='fa fa-bank'></i>
                         <span>My Marketplace</span>
                     </a>
-                    <ul id="my-marketplace-sub" class="sub-nav collapse in">
-                        <li>
-                            <a href="/my-marketplace/locations/types.html">
-                                <span>Locations</span>
-                            </a>
-                        </li><!-- Locations -->
-                        <li>
-                            <a href="/my-marketplace/listings/types.html" class="active">
-                                <span>Listings</span>
-                            </a>
-                        </li><!-- Listings -->
+                    <ul id="my-marketplace-sub" class="sub-nav collapse">
                         <li>
                             <a href="/my-marketplace/permissions/admins.html">
                                 <span>Permissions</span>
@@ -113,7 +115,6 @@
                             </a>
                         </li>
                     </ul><!-- My Marketplace Sub Nav -->
-                </li><!-- My Marketplace -->
                 <li id="mailers">
                     <a href="/mailers.html">
                         <i class='fa fa-envelope'></i>
@@ -199,23 +200,23 @@
             <div class="sub-header-nav">
                 <ul>
                     <li>
-                        <a href="/my-marketplace/locations/types.html">
+                        <a href="/services/locations/types.html">
                             Types
                         </a>
                     </li>
                     <li>
-                        <a href="/my-marketplace/locations/amenities.html" class="active">
+                        <a href="/services/locations/amenities.html" class="active">
                             Amenities
                         </a>
                     </li>
-                    <li class="sub-nav-btn">
+                    <li class="sub-nav-btn add-new-btn">
                         <a href="#">
                             + New Category
                         </a>
                     </li>
                 </ul>
             </div>
-            <div class="content-container line-item">
+            <div class="content-container line-item add-new-hidden">
                 <div class="row">
                     <div class="line-item-container" style="border-left: solid #46B272 4px;">
                         <input type="text" id="new-amenitiy-category" class="form-control field-input" placeholder="Enter new category name here">
@@ -227,7 +228,7 @@
                     <div class="line-item-container hover line-item-category">
                         <label for="">PARKING</label>
                         <span>
-                            <a href="#" class="line-item-btn">+</a>
+                            <a href="#" tabindex="0" class="line-item-btn" rel="popover" data-content="<ul><li><a href='#'><i class='fa fa-plus'></i>Add Child</a></li><li><a href=''><i class='fa fa-pencil'></i>Edit</a></li><li><a href='#'><i class='fa fa-times'></i>Delete</a></li></ul>" data-html="true" data-trigger="focus">+</a>
                         </span>
                     </div>
                 </div>
@@ -237,7 +238,7 @@
                     <div class="line-item-container hover line-item-child">
                         <label for="">Attendant on duty</label>
                         <span>
-                            <a href="#" class="line-item-btn">+</a>
+                            <a href="#" tabindex="0" class="line-item-btn" rel="popover" data-content="<ul><li><a href=''><i class='fa fa-pencil'></i>Edit</a></li><li><a href='#'><i class='fa fa-times'></i>Delete</a></li></ul>" data-html="true" data-trigger="focus">+</a>
                         </span>
                     </div>
                 </div>
@@ -247,7 +248,7 @@
                     <div class="line-item-container hover line-item-child">
                         <label for="">Plenty of parking space</label>
                         <span>
-                            <a href="#" class="line-item-btn">+</a>
+                            <a href="#" tabindex="0" class="line-item-btn" rel="popover" data-content="<ul><li><a href=''><i class='fa fa-pencil'></i>Edit</a></li><li><a href='#'><i class='fa fa-times'></i>Delete</a></li></ul>" data-html="true" data-trigger="focus">+</a>
                         </span>
                     </div>
                 </div>
@@ -257,7 +258,7 @@
                     <div class="line-item-container hover line-item-category">
                         <label for="">ENTERTAINMENT</label>
                         <span>
-                            <a href="#" class="line-item-btn">+</a>
+                            <a href="#" tabindex="0" class="line-item-btn" rel="popover" data-content="<ul><li><a href='#'><i class='fa fa-plus'></i>Add Child</a></li><li><a href=''><i class='fa fa-pencil'></i>Edit</a></li><li><a href='#'><i class='fa fa-times'></i>Delete</a></li></ul>" data-html="true" data-trigger="focus">+</a>
                         </span>
                     </div>
                 </div>
@@ -267,7 +268,7 @@
                     <div class="line-item-container hover line-item-child">
                         <label for="">Happy Hour</label>
                         <span>
-                            <a href="#" class="line-item-btn">+</a>
+                            <a href="#" tabindex="0" class="line-item-btn" rel="popover" data-content="<ul><li><a href=''><i class='fa fa-pencil'></i>Edit</a></li><li><a href='#'><i class='fa fa-times'></i>Delete</a></li></ul>" data-html="true" data-trigger="focus">+</a>
                         </span>
                     </div>
                 </div>
@@ -277,7 +278,7 @@
                     <div class="line-item-container hover line-item-child">
                         <label for="">Sockem Boppers</label>
                         <span>
-                            <a href="#" class="line-item-btn">+</a>
+                            <a href="#" tabindex="0" class="line-item-btn" rel="popover" data-content="<ul><li><a href=''><i class='fa fa-pencil'></i>Edit</a></li><li><a href='#'><i class='fa fa-times'></i>Delete</a></li></ul>" data-html="true" data-trigger="focus">+</a>
                         </span>
                     </div>
                 </div>
